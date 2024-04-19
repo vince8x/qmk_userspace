@@ -55,6 +55,7 @@
 // Use Left Ctrl + Right Ctrl to activate the Command feature.
 #define IS_COMMAND() (get_mods() == MOD_MASK_CTRL)
 
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 // Holding Shift while Caps Word is active inverts the shift state.
 #define CAPS_WORD_INVERT_ON_SHIFT
 // When idle, turn off Caps Word after 5 seconds.
@@ -66,4 +67,4 @@
 // When idle, turn off Sentence Case after 2 seconds.
 #define SENTENCE_CASE_TIMEOUT 2000
 
-#define ACHORDION_STREAK
+// #define ACHORDION_STREAK
