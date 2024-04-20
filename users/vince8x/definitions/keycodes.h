@@ -44,24 +44,24 @@ enum custom_keycodes {
 #define ADJUST_OSL OSL(_ADJUST)
 
 #define HOME_A LT(_FUN, KC_A)
-#define HOME_R LALT_T(KC_R)
+#define HOME_R LT(_SYM, KC_R)
 #define HOME_S LCTL_T(KC_S)
 #define HOME_T LSFT_T(KC_T)
 #define HOME_N RSFT_T(KC_N)
 #define HOME_E RCTL_T(KC_E)
-#define HOME_I RALT_T(KC_I)
+#define HOME_I LT(_SYM, KC_I)
 #define HOME_O LT(_FUN, KC_O)
 #define HOME_Z LGUI_T(KC_Z)
 #define HOME_SL RGUI_T(KC_SLSH)
 
 // Home row mods for QWERTY layer.
 #define QHOME_A LT(_FUN, KC_A)
-#define QHOME_S LALT_T(KC_S)
+#define QHOME_S LT(_SYM, KC_S)
 #define QHOME_D LSFT_T(KC_D)
 #define QHOME_F LCTL_T(KC_F)
 #define QHOME_J RCTL_T(KC_J)
 #define QHOME_K RSFT_T(KC_K)
-#define QHOME_L LALT_T(KC_L)
+#define QHOME_L LT(_SYM, KC_L)
 #define QHOME_SC LT(_FUN, KC_SCLN)
 #define QHOME_Z LGUI_T(KC_Z)
 #define QHOME_SL RGUI_T(KC_SLSH)
@@ -110,12 +110,15 @@ enum custom_keycodes {
 #define RCTLT_E RCTL_T(KC_E)
 
 // Navigation
-#define LCTRL_TAB LCTL_T(KC_TAB)
-#define CST_TAB C_S_T(KC_TAB)
-#define TAB_CLOSE LCTL_T(KC_W)
-#define W_CLOSE LCTL_T(KC_F4)
-#define W_NEXT LALT_T(KC_TAB)
-#define W_PREV LSA_T(KC_TAB)
+#define LCTRL_TAB C(KC_TAB)
+#define CST_TAB RCS(KC_TAB)
+#define TAB_CLOSE C(KC_W)
+#define W_CLOSE A(KC_F4)
+#define W_NEXT A(KC_TAB)
+#define W_PREV LSA(KC_TAB)
+#define VSCODE_N LCA(KC_MINS)
+#define VSCODE_P RCS(KC_MINS)
+
 
 // ctrl w
 #define LCTLT_W LCTL_T(KC_W)
@@ -126,8 +129,14 @@ enum custom_keycodes {
 #define LGUIT_T LGUI_T(KC_T)
 #define RGUIT_R RGUI_T(KC_R)
 
-#define HYP_KCJ HYPR_T(KC_J)
-#define HYP_KCV HYPR_T(KC_V)
+// hyper
+#define HYP_KCG HYPR_T(KC_G)
+#define HYP_KCM HYPR_T(KC_M)
+#define HYP_KCH HYPR_T(KC_H)
+
+// function
+#define DESK_N LGUI_T(KC_PGDN)
+#define DESK_P LGUI_T(KC_PGUP)
 
 
 // One-shot mods
@@ -141,14 +150,15 @@ enum custom_keycodes {
 #define NAV_REP LT(_NAV, REPEAT)
 #define FNA_REP LT(_FIXED_NAV, REPEAT)
 
-#define NUM_BSPC LT(_NUM, KC_BSPC)
-#define SYM_REP LT(_SYM, REPEAT)
+#define NAV_BSPC LT(_NAV, KC_BSPC)
+#define NUM_REP LT(_NUM, REPEAT)
 #define NAV_SPC LT(_NAV, KC_SPC)
-#define NUM_ENT LT(_NUM, KC_ENT)
 
 
 // Layer transitions
-# define MO_FUN MO(_FUN)
+#define MO_FUN MO(_FUN)
+#define MO_NAV MO(_NAV)
+#define MO_NUM MO(_NUM)
 // #define MO_MED  MO(_MEDIA)
 // #define MO_SYS  MO(_SYSTEM)
 // #define TO_A1   TO(_ALPHA1)
@@ -157,6 +167,7 @@ enum custom_keycodes {
 // #define TG_LOCK TG(_LOCK)
 // #define TG_NUM  TG(_NUMPAD)
 // #define OS_SYM  OSL(_SYMBOLS)
+
 
 
 uint16_t extract_tapping_keycode(uint16_t keycode);
