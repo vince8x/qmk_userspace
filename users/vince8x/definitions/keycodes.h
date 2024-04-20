@@ -52,7 +52,9 @@ enum custom_keycodes {
 #define HOME_I LT(_SYM, KC_I)
 #define HOME_O LT(_FUN, KC_O)
 #define HOME_Z LGUI_T(KC_Z)
+#define HOME_X LALT_T(KC_X)
 #define HOME_SL RGUI_T(KC_SLSH)
+#define HOME_DOT RALT_T(KC_DOT)
 
 // Home row mods for QWERTY layer.
 #define QHOME_A LT(_FUN, KC_A)
@@ -64,7 +66,9 @@ enum custom_keycodes {
 #define QHOME_L LT(_SYM, KC_L)
 #define QHOME_SC LT(_FUN, KC_SCLN)
 #define QHOME_Z LGUI_T(KC_Z)
+#define QHOME_X LALT_T(KC_X)
 #define QHOME_SL RGUI_T(KC_SLSH)
+#define QHOME_DOT RALT_T(KC_DOT)
 
 #define H_DLR LGUI_T(KC_DLR)
 #define H_LXXX LALT_T(XXXXXXX)
@@ -110,8 +114,8 @@ enum custom_keycodes {
 #define RCTLT_E RCTL_T(KC_E)
 
 // Navigation
-#define LCTRL_TAB C(KC_TAB)
-#define CST_TAB RCS(KC_TAB)
+#define TAB_NEXT C(KC_TAB)
+#define TAB_PREV RCS(KC_TAB)
 #define TAB_CLOSE C(KC_W)
 #define W_CLOSE A(KC_F4)
 #define W_NEXT A(KC_TAB)
@@ -120,12 +124,12 @@ enum custom_keycodes {
 #define VSCODE_P RCS(KC_MINS)
 
 
-// ctrl w
-#define LCTLT_W LCTL_T(KC_W)
 
-#define LALTT_R LALT_T(KC_R)
-#define RALTT_I RALT_T(KC_I)
+// alt
+#define LALTT_X LALT_T(KC_X)
+#define RALTT_DOT RALT_T(KC_DOT)
 
+// gui
 #define LGUIT_T LGUI_T(KC_T)
 #define RGUIT_R RGUI_T(KC_R)
 
@@ -141,6 +145,8 @@ enum custom_keycodes {
 
 // One-shot mods
 #define OS_LSFT OSM(MOD_LSFT)
+#define OS_LCTL OSM(MOD_LCTL)
+
 
 // Layer-taps
 #define NAV_F12 LT(_NAV, KC_F12)
