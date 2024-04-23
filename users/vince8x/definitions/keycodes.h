@@ -43,17 +43,17 @@ enum custom_keycodes {
 #define NUMS_LT LT(_NUMS, KC_TAB)
 #define ADJUST_OSL OSL(_ADJUST)
 
-#define HOME_A LT(_FUN, KC_A)
+#define HOME_A LGUI_T(KC_A)
 #define HOME_R LT(_SYM, KC_R)
 #define HOME_S LCTL_T(KC_S)
 #define HOME_T LSFT_T(KC_T)
 #define HOME_N RSFT_T(KC_N)
 #define HOME_E RCTL_T(KC_E)
 #define HOME_I LT(_SYM, KC_I)
-#define HOME_O LT(_FUN, KC_O)
-#define HOME_Z LGUI_T(KC_Z)
+#define HOME_O LGUI_T(KC_O)
+#define HOME_Z LALT_T(KC_Z)
 #define HOME_X LALT_T(KC_X)
-#define HOME_SL RGUI_T(KC_SLSH)
+#define HOME_SL RALT_T(KC_SLSH)
 #define HOME_DOT RALT_T(KC_DOT)
 
 // Home row mods for QWERTY layer.
@@ -120,8 +120,10 @@ enum custom_keycodes {
 #define W_CLOSE A(KC_F4)
 #define W_NEXT A(KC_TAB)
 #define W_PREV LSA(KC_TAB)
-#define VSCODE_N LCA(KC_MINS)
-#define VSCODE_P RCS(KC_MINS)
+#define VSCODE_P LCA(KC_MINS)
+#define VSCODE_N RCS(KC_MINS)
+#define MONITOR_N LSG(KC_RIGHT)
+#define MONITOR_P LSG(KC_LEFT)
 
 
 
@@ -137,6 +139,7 @@ enum custom_keycodes {
 #define HYP_KCG HYPR_T(KC_G)
 #define HYP_KCM HYPR_T(KC_M)
 #define HYP_KCH HYPR_T(KC_H)
+
 
 // function
 #define DESK_N LGUI_T(KC_PGDN)
@@ -159,12 +162,14 @@ enum custom_keycodes {
 #define NAV_BSPC LT(_NAV, KC_BSPC)
 #define NUM_REP LT(_NUM, REPEAT)
 #define NAV_SPC LT(_NAV, KC_SPC)
+#define SYM_E LT(_SYM, KC_E)
 
 
 // Layer transitions
 #define MO_FUN MO(_FUN)
 #define MO_NAV MO(_NAV)
 #define MO_NUM MO(_NUM)
+#define MO_SYM MO(_SYM)
 // #define MO_MED  MO(_MEDIA)
 // #define MO_SYS  MO(_SYSTEM)
 // #define TO_A1   TO(_ALPHA1)

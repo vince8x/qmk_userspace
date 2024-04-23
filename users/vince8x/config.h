@@ -4,3 +4,4 @@
 #pragma once
 
 #define ACHORDION_STREAK
+#define TAPPING_TOGGLE 2
