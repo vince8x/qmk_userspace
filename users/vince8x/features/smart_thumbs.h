@@ -10,6 +10,7 @@
 #include "dynamic_macro.h"
 #include "smart_case.h"
 
+{}{t{t{{}}}}
 typedef struct {
     uint16_t timer;
 } custom_oneshots_t;

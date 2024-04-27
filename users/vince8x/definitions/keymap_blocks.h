@@ -5,14 +5,14 @@
 
 // clang-format off
 
-#define ___________________BASE_L1_____________________   KC_Q    , KC_W    , KC_F    , KC_P       , KC_B
-#define ___________________BASE_L2_____________________   HOME_A  , HOME_R  , HOME_S  , HOME_T     , HYP_KCG
-#define ___________________BASE_L3_____________________   HOME_Z  , HOME_X  , KC_C    , KC_D       , KC_V
-#define ___________________BASE_L4_____________________                       NAV_SPC , MO_SYM     , MO_FUN
-#define ___________________BASE_R1_____________________   KC_J    , KC_L    , KC_U    , KC_Y       , KC_QUOT
-#define ___________________BASE_R2_____________________   HYP_KCM , HOME_N  , HOME_E  , HOME_I     , HOME_O
-#define ___________________BASE_R3_____________________   KC_K    , KC_H    , KC_COMM , HOME_DOT   , HOME_SL
-#define ___________________BASE_R4_____________________   MO_FUN  , SYM_E   , NAV_BSPC
+#define ___________________BASE_L1_____________________   KC_Q    , KC_W       , KC_F    , KC_P       , KC_B
+#define ___________________BASE_L2_____________________   HOME_A  , HOME_R     , HOME_S  , HOME_T     , HYP_KCG
+#define ___________________BASE_L3_____________________   HOME_Z  , HOME_X     , KC_C    , KC_D       , KC_V
+#define ___________________BASE_L4_____________________                          NAV_SPC , TT(_NUM)   , MO_FUN
+#define ___________________BASE_R1_____________________   KC_J    , KC_L       , KC_U    , KC_Y       , KC_QUOT
+#define ___________________BASE_R2_____________________   HYP_KCM , HOME_N     , HOME_E  , HOME_I     , HOME_O
+#define ___________________BASE_R3_____________________   KC_K    , KC_H       , KC_COMM , HOME_DOT   , HOME_SL
+#define ___________________BASE_R4_____________________   MO_FUN  , TT(_SYM)   , NAV_BSPC
 
 #define ___________________QWERTY_L1___________________   KC_Q    , KC_W    , KC_E    , KC_R       , KC_T
 #define ___________________QWERTY_L2___________________   QHOME_A , QHOME_S , QHOME_D , QHOME_F    , HYP_KCG
@@ -24,24 +24,24 @@
 #define ___________________QWERTY_R4___________________   MO_FUN  , NAV_BSPC, NUM_REP
 
 
-#define ___________________NUM_L1______________________   KC_TILDE    , KC_AT   , KC_HASH , KC_DLR         , KC_PERC
-#define ___________________NUM_L2______________________   KC_ASTR     , KC_PERC , KC_CIRC   , KC_AMPR      , KC_COLN
+#define ___________________NUM_L1______________________   KC_TILDE    , KC_AT   , KC_HASH   , KC_DLR         , KC_PERC
+#define ___________________NUM_L2______________________   KC_EXLM     , KC_PERC , KC_CIRC   , KC_AMPR      , KC_COLN
 #define ___________________NUM_L3______________________   KC_GRV      , KC_GRV  , KC_C      , LSFT(KC_MINS), KC_B
-#define ___________________NUM_L4______________________                           TO(_BASE) , KC_SPC       , KC_SPC
+#define ___________________NUM_L4______________________                           KC_SPC    , KC_SPC       , KC_SPC
 #define ___________________NUM_R1______________________   KC_EQL      , KC_7    , KC_8      , KC_9         , KC_BSLS
 #define ___________________NUM_R2______________________   KC_0        , KC_4    , KC_5      , KC_6         , KC_SCLN
 #define ___________________NUM_R3______________________   KC_MINS     , KC_1    , KC_2      , KC_3         , KC_SLSH
-#define ___________________NUM_R4______________________   KC_ENT      , KC_BSPC , XXXXXXX
+#define ___________________NUM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
 
 
 #define ___________________SYM_L1______________________   KC_TILDE    , KC_AT   , KC_RABK    , KC_PLUS         , KC_DQUO
 #define ___________________SYM_L2______________________   KC_EXLM     , KC_HASH , KC_DLR     , KC_EQL          , KC_CIRC
 #define ___________________SYM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_QUOT
-#define ___________________SYM_L4______________________                           TO(_BASE)  , KC_SPC          , KC_SPC
-#define ___________________SYM_R1______________________   KC_AMPR     , KC_PERC , KC_LBRC    , KC_RBRC         , KC_BSLS
+#define ___________________SYM_L4______________________                           MO_NUM     , KC_SPC          , KC_SPC
+#define ___________________SYM_R1______________________   KC_AMPR     , KC_CIRC , KC_LBRC    , KC_RBRC         , KC_BSLS
 #define ___________________SYM_R2______________________   KC_ASTR     , KC_COLN , KC_LPRN    , KC_RPRN         , KC_QUES
-#define ___________________SYM_R3______________________   KC_TILDE    , KC_PIPE , KC_LCBR    , KC_RCBR         , KC_SLSH
-#define ___________________SYM_R4______________________   KC_ENT      , KC_BSPC , XXXXXXX
+#define ___________________SYM_R3______________________   KC_TILDE    , KC_DLR  , KC_LCBR    , KC_RCBR         , KC_SLSH
+#define ___________________SYM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
 
 
 #define ___________________FUN_L1______________________   XXXXXXX     , XXXXXXX , REDO       , UNDO            , XXXXXXX
@@ -54,13 +54,13 @@
 #define ___________________FUN_R4______________________   KC_ENT      , KC_BSPC , XXXXXXX
 
 
-#define ___________________NAV_L1______________________   TAB_CLOSE   , TAB_PREV  , TAB_NEXT   , VSCODE_P        , VSCODE_N
-#define ___________________NAV_L2______________________   C(KC_A)     , MONITOR_P , MONITOR_N  , C(KC_W)         , SAVE
-#define ___________________NAV_L3______________________   W_CLOSE     , W_PREV    , W_NEXT     , REDO            , UNDO
-#define ___________________NAV_L4______________________                             KC_ESC     , KC_SPC          , KC_SPC
-#define ___________________NAV_R1______________________   COPY        , KC_PGUP   , KC_HOME    , UNDO            , PAST
+#define ___________________NAV_L1______________________   TERM_CLOSE  , TERM_P    , DESK_P     , TERM_N          , DESK_N
+#define ___________________NAV_L2______________________   TAB_CLOSE   , TAB_PREV  , VSCODE_P   , TAB_NEXT        , VSCODE_N
+#define ___________________NAV_L3______________________   W_CLOSE     , W_PREV    , MONITOR_P  , W_NEXT          , MONITOR_N
+#define ___________________NAV_L4______________________                             XXXXXXX    , MO(_NUM)        , KC_SPC
+#define ___________________NAV_R1______________________   COPY        , KC_PGUP   , UNDO       , KC_HOME         , PAST
 #define ___________________NAV_R2______________________   KC_LEFT     , KC_DOWN   , KC_UP      , KC_RIGHT        , CW_TOGG
-#define ___________________NAV_R3______________________   KC_INS      , KC_PGDN   , KC_END     , KC_RCBR         , KC_SLSH
+#define ___________________NAV_R3______________________   KC_INS      , KC_PGDN   , REDO       , KC_END          , KC_SLSH
 #define ___________________NAV_R4______________________   KC_ENT      , KC_BSPC   , XXXXXXX
 
 

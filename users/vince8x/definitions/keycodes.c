@@ -73,3 +73,15 @@ uint16_t extract_tapping_keycode(uint16_t keycode) {
     return keycode;
 }
 
+bool is_string_macro_keycode(uint16_t keycode) {
+    return keycode > STR_MACRO_START && keycode < STR_MACRO_END;
+}
+
+bool is_shift_macro_keycode(uint16_t keycode) {
+    return keycode > SFT_MACRO_START && keycode < SFT_MACRO_END;
+}
+
+bool is_accent_macro_keycode(uint16_t keycode) {
+    return keycode > ACCENT_MACRO_START && keycode < ACCENT_MACRO_END;
+}
+

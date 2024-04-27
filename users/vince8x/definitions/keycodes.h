@@ -5,10 +5,32 @@
 // clang-format off
 
 
+// tap dance codes
+enum {
+    TD_CODE_START,
+    ENT_END,
+    SCL_END,
+    TD_CODE_END,
+};
+
+// tap dance keycodes
+
+#define TD_EENT TD(ENT_END)
+#define TD_SCLE TD(SCL_END)
+
 // Custom keycodes
 enum custom_keycodes {
     CUSTOM_KEYCODE_START = QK_USER, // SAFE_RANGE
     REPEAT,
+    SFT_MACRO_START,
+    STR_MACRO_START,
+    SFT_MACRO_END,
+
+    MC_VIM_CLOSE,
+     // Start macros for accented letters
+    ACCENT_MACRO_START,
+    ACCENT_MACRO_END,
+    STR_MACRO_END,
     CUSTOM_KEYCODE_END
 };
 
@@ -44,15 +66,15 @@ enum custom_keycodes {
 #define ADJUST_OSL OSL(_ADJUST)
 
 #define HOME_A LGUI_T(KC_A)
-#define HOME_R LT(_SYM, KC_R)
+#define HOME_R LALT_T(KC_R)
 #define HOME_S LCTL_T(KC_S)
 #define HOME_T LSFT_T(KC_T)
 #define HOME_N RSFT_T(KC_N)
 #define HOME_E RCTL_T(KC_E)
-#define HOME_I LT(_SYM, KC_I)
+#define HOME_I LALT_T(KC_I)
 #define HOME_O LGUI_T(KC_O)
 #define HOME_Z LALT_T(KC_Z)
-#define HOME_X LALT_T(KC_X)
+#define HOME_X LT(_FUN, KC_X)
 #define HOME_SL RALT_T(KC_SLSH)
 #define HOME_DOT RALT_T(KC_DOT)
 
@@ -122,8 +144,14 @@ enum custom_keycodes {
 #define W_PREV LSA(KC_TAB)
 #define VSCODE_P LCA(KC_MINS)
 #define VSCODE_N RCS(KC_MINS)
+#define VS_CLOSE MC_VIM_CLOSE
 #define MONITOR_N LSG(KC_RIGHT)
 #define MONITOR_P LSG(KC_LEFT)
+#define DESK_N LGUI_T(KC_PGDN)
+#define DESK_P LGUI_T(KC_PGUP)
+#define TERM_N C(KC_PGDN)
+#define TERM_P C(KC_PGUP)
+#define TERM_CLOSE C(KC_D)
 
 
 
@@ -142,8 +170,6 @@ enum custom_keycodes {
 
 
 // function
-#define DESK_N LGUI_T(KC_PGDN)
-#define DESK_P LGUI_T(KC_PGUP)
 
 
 // One-shot mods
@@ -163,6 +189,7 @@ enum custom_keycodes {
 #define NUM_REP LT(_NUM, REPEAT)
 #define NAV_SPC LT(_NAV, KC_SPC)
 #define SYM_E LT(_SYM, KC_E)
+#define SYM_REP LT(_SYM, QK_REP)
 
 
 // Layer transitions
@@ -182,6 +209,6 @@ enum custom_keycodes {
 
 
 uint16_t extract_tapping_keycode(uint16_t keycode);
-// bool is_string_macro_keycode(uint16_t keycode);
-// bool is_shift_macro_keycode(uint16_t keycode);
-// bool is_accent_macro_keycode(uint16_t keycode);
+bool is_string_macro_keycode(uint16_t keycode);
+bool is_shift_macro_keycode(uint16_t keycode);
+bool is_accent_macro_keycode(uint16_t keycode);

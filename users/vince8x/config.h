@@ -4,4 +4,5 @@
 #pragma once
 
 #define ACHORDION_STREAK
-#define TAPPING_TOGGLE 2
+#define TAPPING_TOGGLE 1
+#define LEADER_TIMEOUT 300

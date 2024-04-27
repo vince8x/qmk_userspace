@@ -1,6 +1,8 @@
 SRC += vince8x.c
 SRC += $(USER_PATH)/definitions/keycodes.c
 SRC += $(USER_PATH)/features/achordion.c
+# SRC += $(USER_PATH)/features/tapdance.c
+SRC += $(USER_PATH)/features/macros.c
 SRC += $(USER_PATH)/features/custom_shift_keys.c
 SRC += $(USER_PATH)/features/orbital_mouse.c
 SRC += $(USER_PATH)/features/select_word.c
