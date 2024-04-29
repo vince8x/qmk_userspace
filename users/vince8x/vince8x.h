@@ -6,6 +6,7 @@
 #include "features/achordion.h"
 // #include "features/tapdance.h"
 #include "features/macros.h"
+#include "features/num_word.h"
 
 #ifdef MOUSE_ENABLE
 #    include "features/orbital_mouse.h"

@@ -9,6 +9,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     if (!process_achordion(keycode, record)) {
         return false;
     }
+    if (!process_record_num_word(keycode, record)) {
+        return false;
+    }
 
     // // Process macros
     switch (process_macros(keycode, record)) {

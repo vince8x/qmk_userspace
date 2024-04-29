@@ -36,6 +36,7 @@ const uint16_t r_base_colon_combo[] PROGMEM  = {HOME_N, HOME_I, COMBO_END};
 const uint16_t r_base_semicolon_combo[] PROGMEM  = {HOME_I, HOME_O, COMBO_END};
 const uint16_t r_base_pipe_combo[] PROGMEM  = {HOME_N, KC_H, COMBO_END};
 
+
 // row 3
 const uint16_t r_base_del_combo[] PROGMEM  = {HOME_I, HOME_DOT, COMBO_END};
 const uint16_t r_base_minus_combo[] PROGMEM = { HYP_KCM, HOME_N, COMBO_END};
@@ -46,6 +47,7 @@ const uint16_t r_base_lcbr_combo[] PROGMEM  = {KC_H, KC_COMM, COMBO_END};
 const uint16_t r_base_rcbr_combo[] PROGMEM  = {KC_COMM, HOME_DOT, COMBO_END};
 
 const uint16_t base_capsword_combo[] PROGMEM = {KC_F, KC_U, COMBO_END};
+const uint16_t base_numword_combo[] PROGMEM = {KC_C, KC_COMM, COMBO_END};
 
 
 // Qwerty
@@ -59,7 +61,7 @@ const uint16_t r_num_minus_combo[] PROGMEM = { KC_0, KC_4, COMBO_END};
 const uint16_t r_num_unders_combo[] PROGMEM = { KC_MINS, KC_1, COMBO_END};
 const uint16_t r_num_equal_combo[] PROGMEM = { KC_EQL, KC_7, COMBO_END};
 const uint16_t r_num_plus_combo[] PROGMEM = { KC_0, KC_4, KC_5, COMBO_END};
-const uint16_t r_num_return_base_combo[] PROGMEM  = {KC_5, KC_6, COMBO_END};
+const uint16_t r_num_esc_combo[] PROGMEM  = {KC_5, KC_6, COMBO_END};
 
 combo_t key_combos[] = {
     // base
@@ -100,6 +102,7 @@ combo_t key_combos[] = {
     COMBO(r_base_lcbr_combo, KC_LCBR),
     COMBO(r_base_rcbr_combo, KC_RCBR),
     COMBO(base_capsword_combo, CW_TOGG),
+    COMBO(base_numword_combo, NUMWORD),
 
     // navigation
 
@@ -108,6 +111,7 @@ combo_t key_combos[] = {
     COMBO(r_num_unders_combo, KC_UNDS),
     COMBO(r_num_equal_combo, KC_EQL),
     COMBO(r_num_plus_combo, KC_PLUS),
+    COMBO(r_num_esc_combo, KC_PLUS),
 
 };
 uint16_t COMBO_LEN = sizeof(key_combos) / sizeof(*key_combos);

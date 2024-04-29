@@ -8,11 +8,11 @@
 #define ___________________BASE_L1_____________________   KC_Q    , KC_W       , KC_F    , KC_P       , KC_B
 #define ___________________BASE_L2_____________________   HOME_A  , HOME_R     , HOME_S  , HOME_T     , HYP_KCG
 #define ___________________BASE_L3_____________________   HOME_Z  , HOME_X     , KC_C    , KC_D       , KC_V
-#define ___________________BASE_L4_____________________                          NAV_SPC , TT(_NUM)   , MO_FUN
+#define ___________________BASE_L4_____________________                          NAV_SPC , TT(_SYM)   , MO_FUN
 #define ___________________BASE_R1_____________________   KC_J    , KC_L       , KC_U    , KC_Y       , KC_QUOT
 #define ___________________BASE_R2_____________________   HYP_KCM , HOME_N     , HOME_E  , HOME_I     , HOME_O
 #define ___________________BASE_R3_____________________   KC_K    , KC_H       , KC_COMM , HOME_DOT   , HOME_SL
-#define ___________________BASE_R4_____________________   MO_FUN  , TT(_SYM)   , NAV_BSPC
+#define ___________________BASE_R4_____________________   MO_FUN  , MO(_NUM)   , NAV_BSPC
 
 #define ___________________QWERTY_L1___________________   KC_Q    , KC_W    , KC_E    , KC_R       , KC_T
 #define ___________________QWERTY_L2___________________   QHOME_A , QHOME_S , QHOME_D , QHOME_F    , HYP_KCG
@@ -37,7 +37,7 @@
 #define ___________________SYM_L1______________________   KC_TILDE    , KC_AT   , KC_RABK    , KC_PLUS         , KC_DQUO
 #define ___________________SYM_L2______________________   KC_EXLM     , KC_HASH , KC_DLR     , KC_EQL          , KC_CIRC
 #define ___________________SYM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_QUOT
-#define ___________________SYM_L4______________________                           MO_NUM     , KC_SPC          , KC_SPC
+#define ___________________SYM_L4______________________                           MO_FUN     , XXXXXXX         , KC_SPC
 #define ___________________SYM_R1______________________   KC_AMPR     , KC_CIRC , KC_LBRC    , KC_RBRC         , KC_BSLS
 #define ___________________SYM_R2______________________   KC_ASTR     , KC_COLN , KC_LPRN    , KC_RPRN         , KC_QUES
 #define ___________________SYM_R3______________________   KC_TILDE    , KC_DLR  , KC_LCBR    , KC_RCBR         , KC_SLSH
@@ -47,7 +47,7 @@
 #define ___________________FUN_L1______________________   XXXXXXX     , XXXXXXX , REDO       , UNDO            , XXXXXXX
 #define ___________________FUN_L2______________________   XXXXXXX     , XXXXXXX , XXXXXXX    , XXXXXXX         , XXXXXXX
 #define ___________________FUN_L3______________________   XXXXXXX     , DESK_P  , DESK_N     , KC_MINS         , XXXXXXX
-#define ___________________FUN_L4______________________                           KC_ESC     , KC_SPC          , KC_SPC
+#define ___________________FUN_L4______________________                           XXXXXXX    , XXXXXXX          , KC_SPC
 #define ___________________FUN_R1______________________   KC_F10      , KC_F7   , KC_F8      , KC_F9           , KC_F10
 #define ___________________FUN_R2______________________   KC_F11      , KC_F4   , KC_F5      , KC_F6           , XXXXXXX
 #define ___________________FUN_R3______________________   KC_F12      , KC_F1   , KC_F2      , KC_F3           , KC_F12

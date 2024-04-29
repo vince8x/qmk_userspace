@@ -22,6 +22,7 @@ enum {
 enum custom_keycodes {
     CUSTOM_KEYCODE_START = QK_USER, // SAFE_RANGE
     REPEAT,
+    NUMWORD,
     SFT_MACRO_START,
     STR_MACRO_START,
     SFT_MACRO_END,
