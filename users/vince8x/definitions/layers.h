@@ -7,6 +7,7 @@ typedef enum {
     _NUM,
     _FUN,
     _NAV,
+    _MOUSE,
     _SHORTCUTS,
     _CODING,
     _SYMBOLS,

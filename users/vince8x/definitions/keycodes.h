@@ -10,6 +10,7 @@ enum {
     TD_CODE_START,
     ENT_END,
     SCL_END,
+    TMUX_PREFIX,
     TD_CODE_END,
 };
 
@@ -17,10 +18,17 @@ enum {
 
 #define TD_EENT TD(ENT_END)
 #define TD_SCLE TD(SCL_END)
+#define TD_TMUX TD(TMUX_PREFIX)
 
 // Custom keycodes
 enum custom_keycodes {
     CUSTOM_KEYCODE_START = QK_USER, // SAFE_RANGE
+
+    MC_SECRET_1,
+
+    // Toggle codes
+    TG_WIN, TG_MAC,
+
     REPEAT,
     NUMWORD,
     SFT_MACRO_START,
@@ -145,11 +153,14 @@ enum custom_keycodes {
 #define W_PREV LSA(KC_TAB)
 #define VSCODE_P LCA(KC_MINS)
 #define VSCODE_N RCS(KC_MINS)
+#define OBS_P LCA(KC_LEFT)
+#define OBS_N LCA(KC_RIGHT)
 #define VS_CLOSE MC_VIM_CLOSE
-#define MONITOR_N LSG(KC_RIGHT)
-#define MONITOR_P LSG(KC_LEFT)
-#define DESK_N LGUI_T(KC_PGDN)
-#define DESK_P LGUI_T(KC_PGUP)
+#define MONITOR_N LCA(KC_DOT)
+#define MONITOR_P LCA(KC_COMM)
+#define TOGG_MON A(KC_P)
+#define DESK_N A(KC_TAB)
+#define DESK_P LSA(KC_TAB)
 #define TERM_N C(KC_PGDN)
 #define TERM_P C(KC_PGUP)
 #define TERM_CLOSE C(KC_D)
@@ -198,6 +209,7 @@ enum custom_keycodes {
 #define MO_NAV MO(_NAV)
 #define MO_NUM MO(_NUM)
 #define MO_SYM MO(_SYM)
+#define MO_MOUSE MO(_MOUSE)
 // #define MO_MED  MO(_MEDIA)
 // #define MO_SYS  MO(_SYSTEM)
 // #define TO_A1   TO(_ALPHA1)

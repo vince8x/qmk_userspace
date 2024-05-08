@@ -3,7 +3,10 @@
 bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 #ifdef MOUSE_ENABLE
     // Process Orbital Mouse
-    process_orbital_mouse(keycode, record);
+    if (!process_orbital_mouse(keycode, record)) {
+        return false;
+    };
+
 #endif
     // Process Achordion
     if (!process_achordion(keycode, record)) {
@@ -15,6 +18,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
 
     // // Process macros
     switch (process_macros(keycode, record)) {
+        case PROCESS_RECORD_RETURN_TRUE:
+            return true;
+        case PROCESS_RECORD_RETURN_FALSE:
+            return false;
+        default:
+            break;
+    };
+
+    // Process OS toggle
+    switch (process_os_toggle(keycode, record)) {
         case PROCESS_RECORD_RETURN_TRUE:
             return true;
         case PROCESS_RECORD_RETURN_FALSE:

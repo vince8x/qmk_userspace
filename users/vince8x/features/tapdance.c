@@ -73,13 +73,27 @@ void td_semicolon(tap_dance_state_t *state, void *user_data) {
     }
 }
 
+void td_tmux_prefix(tap_dance_state_t *state, void *user_data) {
+    tap_state.state = dance_state(state);
+    switch (tap_state.state) {
+        case TD_DOUBLE_TAP:
+        case TD_DOUBLE_SINGLE_TAP:
+            register_mods(MOD_BIT(KC_LCTL));
+            register_code(KC_B);
+            break;
+        default:
+            break;
+    }
+}
+
 // clang-format off
 
 // Tap dance declarations
 
 tap_dance_action_t tap_dance_actions[] = {
     [ENT_END] = ACTION_TAP_DANCE_FN(td_enter_end),
-    [SCL_END] = ACTION_TAP_DANCE_FN(td_semicolon)
+    [SCL_END] = ACTION_TAP_DANCE_FN(td_semicolon),
+    [TMUX_PREFIX] = ACTION_TAP_DANCE_FN(td_tmux_prefix)
 // #ifdef DYNAMIC_MACRO_ENABLE
 //     [REC_MAC] = ACTION_TAP_DANCE_FN(td_macro),
 // #endif
