@@ -9,6 +9,7 @@ SRC += $(USER_PATH)/features/orbital_mouse.c
 SRC += $(USER_PATH)/features/select_word.c
 SRC += $(USER_PATH)/features/sentence_case.c
 SRC += $(USER_PATH)/features/num_word.c
+SRC += $(USER_PATH)/features/tmux.c
 
 MOUSE_ENABLE = yes
 # UNICODEMAP_ENABLE = yes

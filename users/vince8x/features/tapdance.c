@@ -79,7 +79,11 @@ void td_tmux_prefix(tap_dance_state_t *state, void *user_data) {
         case TD_DOUBLE_TAP:
         case TD_DOUBLE_SINGLE_TAP:
             register_mods(MOD_BIT(KC_LCTL));
-            register_code(KC_B);
+            register_code(KC_B); unregister_code(KC_B);
+            unregister_mods(MOD_BIT(KC_LCTL));
+            register_mods(MOD_BIT(KC_LSFT));
+            register_code(KC_5); unregister_code(KC_5);
+            unregister_mods(MOD_BIT(KC_LSFT));
             break;
         default:
             break;

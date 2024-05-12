@@ -4,9 +4,9 @@
 
 process_record_result_t process_macros(uint16_t keycode, keyrecord_t *record) {
 
-    // if (!is_shift_macro_keycode(keycode)) {
-    //     return PROCESS_RECORD_CONTINUE;
-    // }
+    if (!is_shift_macro_keycode(keycode)) {
+        return PROCESS_RECORD_CONTINUE;
+    }
 
     if (record != NULL && !record->event.pressed) {
         return PROCESS_RECORD_CONTINUE;

@@ -20,6 +20,35 @@ enum {
 #define TD_SCLE TD(SCL_END)
 #define TD_TMUX TD(TMUX_PREFIX)
 
+// tmux layer
+#define TMUX_PREFIX C(KC_A)
+#define TM_KEY KC_A
+#define TM_DT KC_D
+#define TM_CMD KC_COLN
+#define TM_NEW KC_C
+#define TM_WIN_N KC_N
+#define TM_WIN_P KC_P
+#define TM_LS KC_W
+#define TM_SEARCH KC_F
+#define TM_RENAME KC_COMM
+#define TM_CLOSE_W KC_AMPR
+#define TM_SPLIT KC_DQUO
+#define TM_VSPLIT KC_PERC
+#define TM_CYCLE KC_O
+#define TM_CYCLE_L KC_SPC
+#define TM_CLOSE KC_X
+#define TM_LEFT KC_LEFT
+#define TM_RIGHT KC_RIGHT
+#define TM_UP KC_UP
+#define TM_DOWN KC_DOWN
+#define TM_RESIZE_U S(KC_U)
+#define TM_RESIZE_D S(KC_D)
+#define TM_RESIZE_L S(KC_L)
+#define TM_RESIZE_R S(KC_R)
+#define TM_COPY KC_Y
+#define TM_PASTE KC_RBRC
+#define TM_CP_MODE KC_LBRC
+
 // Custom keycodes
 enum custom_keycodes {
     CUSTOM_KEYCODE_START = QK_USER, // SAFE_RANGE
@@ -28,6 +57,8 @@ enum custom_keycodes {
 
     // Toggle codes
     TG_WIN, TG_MAC,
+
+    UPDIR,
 
     REPEAT,
     NUMWORD,
@@ -82,9 +113,9 @@ enum custom_keycodes {
 #define HOME_E RCTL_T(KC_E)
 #define HOME_I LALT_T(KC_I)
 #define HOME_O LGUI_T(KC_O)
-#define HOME_Z LALT_T(KC_Z)
+#define HOME_Z LT(_TMUX, KC_Z)
 #define HOME_X LT(_FUN, KC_X)
-#define HOME_SL RALT_T(KC_SLSH)
+#define HOME_SL LT(_TMUX, KC_SLSH)
 #define HOME_DOT RALT_T(KC_DOT)
 
 // Home row mods for QWERTY layer.

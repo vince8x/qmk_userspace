@@ -24,7 +24,7 @@
 #define ___________________QWERTY_R4___________________   MO_FUN  , NAV_BSPC, NUM_REP
 
 
-#define ___________________NUM_L1______________________   KC_TILDE    , KC_AT   , KC_HASH   , KC_DLR       , KC_PERC
+#define ___________________NUM_L1______________________   KC_TILDE    , KC_LABK , KC_RABK   , KC_DLR       , KC_PERC
 #define ___________________NUM_L2______________________   KC_EXLM     , KC_PERC , KC_CIRC   , KC_AMPR      , KC_COLN
 #define ___________________NUM_L3______________________   KC_GRV      , KC_GRV  , KC_C      , LSFT(KC_MINS), KC_B
 #define ___________________NUM_L4______________________                           KC_SPC    , KC_SPC       , KC_SPC
@@ -71,6 +71,16 @@
 #define ___________________MOU_R2______________________   OM_HLDS     , OM_L      , OM_D       , OM_R            , _______
 #define ___________________MOU_R3______________________   OM_RELS     , OM_W_D    , OM_W_U     , OM_BTN3         , _______
 #define ___________________MOU_R4______________________   _______     , C(KC_C)   , C(KC_V)
+
+
+#define ___________________TMUX_L1_____________________   TM_DT       , TM_RENAME  , TM_SEARCH  , TM_PASTE      , XXXXXXX
+#define ___________________TMUX_L2_____________________   TM_CLOSE    , TM_WIN_P   , TM_WIN_N   , TM_NEW        , TM_LS
+#define ___________________TMUX_L3_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX    , TM_RESIZE_D   , TM_SPLIT
+#define ___________________TMUX_L4_____________________                              TM_KEY     , XXXXXXX       , KC_SPC
+#define ___________________TMUX_R1_____________________   TM_CMD      , TM_RESIZE_L, TM_RESIZE_U, TM_COPY       , TM_RESIZE_R
+#define ___________________TMUX_R2_____________________   TM_LEFT     , TM_DOWN    , TM_UP      , TM_RIGHT      , TM_CYCLE
+#define ___________________TMUX_R3_____________________   TM_CP_MODE  , TM_VSPLIT  , XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________TMUX_R4_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX
 
 
 #define ________________SHORTCUTS_L1_________           XXXXXXX , MC_CLOS , MC_Z0R  , MC_PREV
