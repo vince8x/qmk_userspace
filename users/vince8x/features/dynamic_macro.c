@@ -33,6 +33,7 @@ void dyn_macro_toggle(uint16_t keycode) {
     }
 }
 
+
 void dyn_macro_reset(void) {
     if (dyn_macro.recording != 0) {
         dyn_macro_stop();

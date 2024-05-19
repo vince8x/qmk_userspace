@@ -90,6 +90,22 @@ void td_tmux_prefix(tap_dance_state_t *state, void *user_data) {
     }
 }
 
+
+void td_macro(tap_dance_state_t *state, void *user_data) {
+    tap_state.state = dance_state(state);
+    switch (tap_state.state) {
+        case TD_DOUBLE_TAP:
+            dyn_macro_toggle(is_shifted() ? QK_DYNAMIC_MACRO_RECORD_START_2 : QK_DYNAMIC_MACRO_RECORD_START_1);
+            break;
+        case TD_SINGLE_TAP:
+            dyn_macro_play(is_shifted() ? QK_DYNAMIC_MACRO_PLAY_2 : QK_DYNAMIC_MACRO_PLAY_1);
+            break;
+        default:
+            break;
+    }
+}
+
+
 // clang-format off
 
 // Tap dance declarations
@@ -97,10 +113,10 @@ void td_tmux_prefix(tap_dance_state_t *state, void *user_data) {
 tap_dance_action_t tap_dance_actions[] = {
     [ENT_END] = ACTION_TAP_DANCE_FN(td_enter_end),
     [SCL_END] = ACTION_TAP_DANCE_FN(td_semicolon),
-    [TMUX_PREFIX] = ACTION_TAP_DANCE_FN(td_tmux_prefix)
-// #ifdef DYNAMIC_MACRO_ENABLE
-//     [REC_MAC] = ACTION_TAP_DANCE_FN(td_macro),
-// #endif
+    [TMUX_PREFIX] = ACTION_TAP_DANCE_FN(td_tmux_prefix),
+#ifdef DYNAMIC_MACRO_ENABLE
+    [REC_MAC] = ACTION_TAP_DANCE_FN(td_macro),
+#endif
     // [MIN_CIR] = ACTION_TAP_DANCE_FN(td_mins),
     // [COL_ECO] = ACTION_TAP_DANCE_FN(td_colon),
     // [HAS_PER] = ACTION_TAP_DANCE_FN(td_hash),

@@ -38,7 +38,7 @@
 #define ___________________SYM_L2______________________   KC_EXLM     , KC_MINS , KC_PLUS    , KC_EQL          , KC_CIRC
 #define ___________________SYM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_QUOT
 #define ___________________SYM_L4______________________                           MO_FUN     , XXXXXXX         , KC_SPC
-#define ___________________SYM_R1______________________   KC_AMPR     , KC_SCLN , KC_LBRC    , KC_RBRC         , KC_BSLS
+#define ___________________SYM_R1______________________   KC_AMPR     , TD_SCLE , KC_LBRC    , KC_RBRC         , KC_BSLS
 #define ___________________SYM_R2______________________   KC_ASTR     , KC_COLN , KC_LPRN    , KC_RPRN         , KC_QUES
 #define ___________________SYM_R3______________________   KC_TILDE    , KC_DLR  , KC_LCBR    , KC_RCBR         , KC_SLSH
 #define ___________________SYM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
