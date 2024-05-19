@@ -1,5 +1,6 @@
 SRC += vince8x.c
 SRC += $(USER_PATH)/definitions/keycodes.c
+SRC += $(USER_PATH)/features/dynamic_macro.c
 SRC += $(USER_PATH)/features/achordion.c
 SRC += $(USER_PATH)/features/os_toggle.c
 SRC += $(USER_PATH)/features/tapdance.c
@@ -18,6 +19,7 @@ OS_DETECTION_ENABLE = yes
 REPEAT_KEY_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 LTO_ENABLE = yes
+DYNAMIC_MACRO_ENABLE = yes
 
 INTROSPECTION_KEYMAP_C = ${USER_PATH}/features/combos.c
 

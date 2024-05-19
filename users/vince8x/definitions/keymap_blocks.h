@@ -8,7 +8,7 @@
 #define ___________________BASE_L1_____________________   KC_Q    , KC_W       , KC_F    , KC_P       , KC_B
 #define ___________________BASE_L2_____________________   HOME_A  , HOME_R     , HOME_S  , HOME_T     , HYP_KCG
 #define ___________________BASE_L3_____________________   HOME_Z  , HOME_X     , KC_C    , KC_D       , KC_V
-#define ___________________BASE_L4_____________________                          NAV_SPC , TT(_SYM)   , MO_MOUSE
+#define ___________________BASE_L4_____________________                          NAV_SPC , MO(_SYM)   , MO_MOUSE
 #define ___________________BASE_R1_____________________   KC_J    , KC_L       , KC_U    , KC_Y       , KC_QUOT
 #define ___________________BASE_R2_____________________   HYP_KCM , HOME_N     , HOME_E  , HOME_I     , HOME_O
 #define ___________________BASE_R3_____________________   KC_K    , KC_H       , KC_COMM , HOME_DOT   , HOME_SL
@@ -24,7 +24,7 @@
 #define ___________________QWERTY_R4___________________   MO_FUN  , NAV_BSPC, NUM_REP
 
 
-#define ___________________NUM_L1______________________   KC_TILDE    , KC_LABK , KC_RABK   , KC_DLR       , KC_PERC
+#define ___________________NUM_L1______________________   KC_AT       , KC_LABK , KC_RABK   , KC_DLR       , KC_PERC
 #define ___________________NUM_L2______________________   KC_EXLM     , KC_PERC , KC_CIRC   , KC_AMPR      , KC_COLN
 #define ___________________NUM_L3______________________   KC_GRV      , KC_GRV  , KC_C      , LSFT(KC_MINS), KC_B
 #define ___________________NUM_L4______________________                           KC_SPC    , KC_SPC       , KC_SPC
@@ -34,17 +34,17 @@
 #define ___________________NUM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
 
 
-#define ___________________SYM_L1______________________   KC_TILDE    , KC_LABK , KC_RABK    , KC_PLUS         , KC_DQUO
+#define ___________________SYM_L1______________________   KC_AT       , KC_LABK , KC_RABK    , KC_PLUS         , KC_DQUO
 #define ___________________SYM_L2______________________   KC_EXLM     , KC_MINS , KC_PLUS    , KC_EQL          , KC_CIRC
 #define ___________________SYM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_QUOT
 #define ___________________SYM_L4______________________                           MO_FUN     , XXXXXXX         , KC_SPC
-#define ___________________SYM_R1______________________   KC_AMPR     , KC_CIRC , KC_LBRC    , KC_RBRC         , KC_BSLS
+#define ___________________SYM_R1______________________   KC_AMPR     , KC_SCLN , KC_LBRC    , KC_RBRC         , KC_BSLS
 #define ___________________SYM_R2______________________   KC_ASTR     , KC_COLN , KC_LPRN    , KC_RPRN         , KC_QUES
 #define ___________________SYM_R3______________________   KC_TILDE    , KC_DLR  , KC_LCBR    , KC_RCBR         , KC_SLSH
 #define ___________________SYM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
 
 
-#define ___________________FUN_L1______________________   XXXXXXX     , XXXXXXX , REDO       , UNDO            , XXXXXXX
+#define ___________________FUN_L1______________________   TD_MACR     , XXXXXXX , REDO       , UNDO            , XXXXXXX
 #define ___________________FUN_L2______________________   XXXXXXX     , XXXXXXX , XXXXXXX    , XXXXXXX         , XXXXXXX
 #define ___________________FUN_L3______________________   XXXXXXX     , DESK_P  , DESK_N     , KC_MINS         , XXXXXXX
 #define ___________________FUN_L4______________________                           XXXXXXX    , XXXXXXX          , KC_SPC
@@ -54,7 +54,7 @@
 #define ___________________FUN_R4______________________   KC_ENT      , KC_BSPC , XXXXXXX
 
 
-#define ___________________NAV_L1______________________   TERM_CLOSE  , TERM_P    , TERM_N     , MONITOR_P       , MONITOR_N
+#define ___________________NAV_L1______________________   WARPD_C     , WARPD_X   , WARPD_G    , MONITOR_P       , MONITOR_N
 #define ___________________NAV_L2______________________   TAB_CLOSE   , TAB_PREV  , TAB_NEXT   , VSCODE_P        , VSCODE_N
 #define ___________________NAV_L3______________________   TOGG_MON    , OBS_P     , OBS_N      , DESK_P          , DESK_N
 #define ___________________NAV_L4______________________                             XXXXXXX    , MO(_NUM)        , KC_SPC
@@ -83,15 +83,15 @@
 #define ___________________TMUX_R4_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX
 
 
-#define ________________SHORTCUTS_L1_________           XXXXXXX , MC_CLOS , MC_Z0R  , MC_PREV
+#define ________________SHORTCUTS_L1___________________ XXXXXXX , MC_CLOS , MC_Z0R  , MC_PREV , XXXXXXX
 #define ________________SHORTCUTS_L2___________________ MO_SYS  , SF_MODM , MC_MODP , MC_TABS , XXXXXXX
-#define           ______SHORTCUTS_L3___________________           MC_SWLE , MC_SWRI , MC_CALC , XXXXXXX
-#define                               _SHORTCUTS_L4____                               NAV_COD , TT_NMO
+#define ________________SHORTCUTS_L3___________________ MC_SWLE , MC_SWRI , MC_CALC , XXXXXXX , XXXXXXX
+#define ________________SHORTCUTS_L4___________________ NAV_COD , TT_NMO  , XXXXXXX
 
-#define           ______SHORTCUTS_R1___________________           MC_SELW , MC_ENT  , MC_ESC  , XXXXXXX
+#define ________________SHORTCUTS_R1___________________ XXXXXXX , MC_SELW , MC_ENT  , MC_ESC  , XXXXXXX
 #define ________________SHORTCUTS_R2___________________ XXXXXXX , MC_SELL , KC_DOWN , SF_UP   , MO_SYS
-#define ________________SHORTCUTS_R3_________           XXXXXXX , MC_JOIN , TD_MACR , SLE_LOC
-#define _SHORTCUTS_R4____                               COD_SPC , TT_NAV
+#define ________________SHORTCUTS_R3___________________ XXXXXXX , MC_JOIN , TD_MACR , SLE_LOC , XXXXXXX
+#define ________________SHORTCUTS_R4___________________ XXXXXXX , COD_SPC , TT_NAV
 
 #define ___________________CODING_L1_________           XXXXXXX , MC_CLOS , MC_BREK , MC_BUID
 #define ___________________CODING_L2___________________ MC_PROJ , SF_FSYM , MC_RUN  , MC_DBUG , XXXXXXX

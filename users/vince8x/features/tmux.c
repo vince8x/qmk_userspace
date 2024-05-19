@@ -8,7 +8,7 @@ bool process_tmux(uint16_t keycode, const keyrecord_t *record) {
         switch (keycode) {
             case KC_B:
                 tap_code16(TMUX_PREFIX);
-                tap_code16(KC_B);
+                tap_code16(KC_A);
                 return false;
             default:
                 tap_code16(TMUX_PREFIX);

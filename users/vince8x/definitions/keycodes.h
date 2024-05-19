@@ -11,6 +11,10 @@ enum {
     ENT_END,
     SCL_END,
     TMUX_PREFIX,
+
+#ifdef DYNAMIC_MACRO_ENABLE
+    REC_MAC,
+#endif
     TD_CODE_END,
 };
 
@@ -19,6 +23,12 @@ enum {
 #define TD_EENT TD(ENT_END)
 #define TD_SCLE TD(SCL_END)
 #define TD_TMUX TD(TMUX_PREFIX)
+#ifdef DYNAMIC_MACRO_ENABLE
+#define TD_MACR TD(REC_MAC)
+#else
+#define TD_MACR XXXXXXX
+#endif
+
 
 // tmux layer
 #define TMUX_PREFIX C(KC_A)
@@ -57,6 +67,9 @@ enum custom_keycodes {
 
     // Toggle codes
     TG_WIN, TG_MAC,
+
+    // Select word/line
+    MC_SELW, MC_SELL,
 
     UPDIR,
 
@@ -116,7 +129,7 @@ enum custom_keycodes {
 #define HOME_Z LT(_TMUX, KC_Z)
 #define HOME_X LT(_FUN, KC_X)
 #define HOME_SL LT(_TMUX, KC_SLSH)
-#define HOME_DOT RALT_T(KC_DOT)
+#define HOME_DOT LT(_FUN, KC_DOT)
 
 // Home row mods for QWERTY layer.
 #define QHOME_A LT(_FUN, KC_A)
@@ -159,7 +172,6 @@ enum custom_keycodes {
 #define REDO  LCTL(LSFT(KC_Z))
 
 // Tap dance codes - TBD
-
 // Custom keycodes - TBD
 
 // Mod-taps
@@ -195,6 +207,10 @@ enum custom_keycodes {
 #define TERM_N C(KC_PGDN)
 #define TERM_P C(KC_PGUP)
 #define TERM_CLOSE C(KC_D)
+#define WARPD_X RAG(KC_X)
+#define WARPD_G RAG(KC_G)
+#define WARPD_C RAG(KC_C)
+
 
 
 
