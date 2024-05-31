@@ -54,10 +54,10 @@
 #define ___________________FUN_R4______________________   KC_ENT      , KC_BSPC , XXXXXXX
 
 
-#define ___________________NAV_L1______________________   WARPD_C     , WARPD_X   , WARPD_G    , MONITOR_P       , MONITOR_N
-#define ___________________NAV_L2______________________   TAB_CLOSE   , TAB_PREV  , TAB_NEXT   , VSCODE_P        , VSCODE_N
-#define ___________________NAV_L3______________________   TOGG_MON    , OBS_P     , OBS_N      , DESK_P          , DESK_N
-#define ___________________NAV_L4______________________                             XXXXXXX    , MO(_NUM)        , KC_SPC
+#define ___________________NAV_L1______________________   TAB_CLOSE   , OBS_P     , OBS_N      , MONITOR_P       , MONITOR_N
+#define ___________________NAV_L2______________________   TOGG_MON    , TAB_PREV  , TAB_NEXT   , VSCODE_P        , VSCODE_N
+#define ___________________NAV_L3______________________   WARPD_C     , WARPD_X   , WARPD_G    , DESK_P          , DESK_N
+#define ___________________NAV_L4______________________                             XXXXXXX    , XXXXXXX         , KC_SPC
 #define ___________________NAV_R1______________________   COPY        , KC_PGUP   , UNDO       , KC_HOME         , PAST
 #define ___________________NAV_R2______________________   KC_LEFT     , KC_DOWN   , KC_UP      , KC_RIGHT        , CW_TOGG
 #define ___________________NAV_R3______________________   KC_INS      , KC_PGDN   , REDO       , KC_END          , KC_SLSH
@@ -73,12 +73,12 @@
 #define ___________________MOU_R4______________________   _______     , C(KC_C)   , C(KC_V)
 
 
-#define ___________________TMUX_L1_____________________   TM_DT       , TM_RENAME  , TM_SEARCH  , TM_PASTE      , XXXXXXX
-#define ___________________TMUX_L2_____________________   TM_CLOSE    , TM_WIN_P   , TM_WIN_N   , TM_NEW        , TM_LS
-#define ___________________TMUX_L3_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX    , TM_RESIZE_D   , TM_SPLIT
+#define ___________________TMUX_L1_____________________   TM_CLOSE    , TM_RENAME  , TM_ZOOM    , TM_PASTE      , XXXXXXX
+#define ___________________TMUX_L2_____________________   TM_CYCLE    , TM_WIN_P   , TM_WIN_N   , TM_NEW        , TM_LS
+#define ___________________TMUX_L3_____________________   XXXXXXX     , TM_MV_LEFT , TM_MV_RIGHT, TM_RESIZE_D   , TM_SPLIT
 #define ___________________TMUX_L4_____________________                              TM_KEY     , XXXXXXX       , KC_SPC
-#define ___________________TMUX_R1_____________________   TM_CMD      , TM_RESIZE_L, TM_RESIZE_U, TM_COPY       , TM_RESIZE_R
-#define ___________________TMUX_R2_____________________   TM_LEFT     , TM_DOWN    , TM_UP      , TM_RIGHT      , TM_CYCLE
+#define ___________________TMUX_R1_____________________   TM_CMD      , XXXXXXX    , XXXXXXX    , TM_COPY       , TM_P_TO_W
+#define ___________________TMUX_R2_____________________   TM_RESIZE_L , TM_RESIZE_D, TM_RESIZE_U, TM_RESIZE_R   , TM_CYCLE
 #define ___________________TMUX_R3_____________________   TM_CP_MODE  , TM_VSPLIT  , XXXXXXX    , XXXXXXX       , XXXXXXX
 #define ___________________TMUX_R4_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX
 

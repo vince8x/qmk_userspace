@@ -47,6 +47,10 @@ enum {
 #define TM_CYCLE KC_O
 #define TM_CYCLE_L KC_SPC
 #define TM_CLOSE KC_X
+#define TM_ZOOM KC_Z
+#define TM_P_TO_W KC_EXLM
+#define TM_MV_LEFT KC_LCBR
+#define TM_MV_RIGHT KC_RCBR
 #define TM_LEFT KC_LEFT
 #define TM_RIGHT KC_RIGHT
 #define TM_UP KC_UP
@@ -201,7 +205,7 @@ enum custom_keycodes {
 #define VS_CLOSE MC_VIM_CLOSE
 #define MONITOR_N LCA(KC_DOT)
 #define MONITOR_P LCA(KC_COMM)
-#define TOGG_MON A(KC_P)
+#define TOGG_MON A(KC_A)
 #define DESK_N A(KC_TAB)
 #define DESK_P LSA(KC_TAB)
 #define TERM_N C(KC_PGDN)
@@ -210,6 +214,9 @@ enum custom_keycodes {
 #define WARPD_X RAG(KC_X)
 #define WARPD_G RAG(KC_G)
 #define WARPD_C RAG(KC_C)
+#define MV_SRP LSA(KC_MINS)
+#define SH_SRP A(KC_MINS)
+
 
 
 
