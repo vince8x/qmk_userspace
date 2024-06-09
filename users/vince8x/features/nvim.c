@@ -8,6 +8,7 @@ bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
         switch (keycode) {
             case NVIM_X_BUF:
                 tap_code(NVIM_LEADER);
+                tap_code(KC_B);
                 tap_code(KC_D);
                 return false;
             case NVIM_X_WIN:
@@ -66,6 +67,14 @@ bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
             case NVIM_TPREV:
                 tap_code(KC_LBRC);
                 tap_code(KC_T);
+                return false;
+            case NVIM_HNEXT:
+                tap_code(KC_RBRC);
+                tap_code(KC_H);
+                return false;
+            case NVIM_HPREV:
+                tap_code(KC_LBRC);
+                tap_code(KC_H);
                 return false;
             case NVIM_WNEXT:
                 tap_code(KC_RBRC);
