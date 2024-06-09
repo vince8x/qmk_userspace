@@ -18,6 +18,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t* record) {
     if (!process_tmux(keycode,record)) {
         return false;
     }
+    if (!process_nvim(keycode,record)) {
+        return false;
+    }
 
     // // Process macros
     switch (process_macros(keycode, record)) {

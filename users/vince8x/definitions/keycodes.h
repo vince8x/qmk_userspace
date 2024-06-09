@@ -39,6 +39,8 @@ enum {
 #define TM_WIN_N KC_N
 #define TM_WIN_P KC_P
 #define TM_LS KC_W
+#define TM_LS_S KC_S
+#define TM_LS_P KC_Q
 #define TM_SEARCH KC_F
 #define TM_RENAME KC_COMM
 #define TM_CLOSE_W KC_AMPR
@@ -55,13 +57,16 @@ enum {
 #define TM_RIGHT KC_RIGHT
 #define TM_UP KC_UP
 #define TM_DOWN KC_DOWN
-#define TM_RESIZE_U S(KC_U)
-#define TM_RESIZE_D S(KC_D)
-#define TM_RESIZE_L S(KC_L)
-#define TM_RESIZE_R S(KC_R)
+#define TM_RESIZE_U S(KC_K)
+#define TM_RESIZE_D S(KC_J)
+#define TM_RESIZE_L S(KC_H)
+#define TM_RESIZE_R S(KC_L)
 #define TM_COPY KC_Y
 #define TM_PASTE KC_RBRC
 #define TM_CP_MODE KC_LBRC
+
+// nvim layer
+#define NVIM_LEADER KC_SPC
 
 // Custom keycodes
 enum custom_keycodes {
@@ -84,6 +89,25 @@ enum custom_keycodes {
     SFT_MACRO_END,
 
     MC_VIM_CLOSE,
+    NVIM_X_BUF,
+    NVIM_BNEXT,
+    NVIM_BPREV,
+    NVIM_B_MOVE_N,
+    NVIM_B_MOVE_P,
+    NVIM_QNEXT,
+    NVIM_QPREV,
+    NVIM_DNEXT,
+    NVIM_DPREV,
+    NVIM_ENEXT,
+    NVIM_EPREV,
+    NVIM_WNEXT,
+    NVIM_WPREV,
+    NVIM_TNEXT,
+    NVIM_TPREV,
+    NVIM_X_WIN,
+    NVIM_X_TAB,
+    NVIM_HNEXT,
+    NVIM_HPREV,
      // Start macros for accented letters
     ACCENT_MACRO_START,
     ACCENT_MACRO_END,

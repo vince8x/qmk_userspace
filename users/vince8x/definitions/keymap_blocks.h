@@ -73,14 +73,24 @@
 #define ___________________MOU_R4______________________   _______     , C(KC_C)   , C(KC_V)
 
 
-#define ___________________TMUX_L1_____________________   TM_CLOSE    , TM_RENAME  , TM_ZOOM    , TM_PASTE      , XXXXXXX
-#define ___________________TMUX_L2_____________________   TM_CYCLE    , TM_WIN_P   , TM_WIN_N   , TM_NEW        , TM_LS
-#define ___________________TMUX_L3_____________________   XXXXXXX     , TM_MV_LEFT , TM_MV_RIGHT, TM_RESIZE_D   , TM_SPLIT
+#define ___________________TMUX_L1_____________________   TM_CLOSE    , TM_RENAME  , TM_ZOOM    , TM_PASTE      , TM_LS_S
+#define ___________________TMUX_L2_____________________   KC_A        , TM_WIN_P   , TM_WIN_N   , TM_NEW        , TM_LS_P
+#define ___________________TMUX_L3_____________________   XXXXXXX     , TM_MV_LEFT , TM_MV_RIGHT, TM_LS_P       , TM_SPLIT
 #define ___________________TMUX_L4_____________________                              TM_KEY     , XXXXXXX       , KC_SPC
 #define ___________________TMUX_R1_____________________   TM_CMD      , XXXXXXX    , XXXXXXX    , TM_COPY       , TM_P_TO_W
 #define ___________________TMUX_R2_____________________   TM_RESIZE_L , TM_RESIZE_D, TM_RESIZE_U, TM_RESIZE_R   , TM_CYCLE
 #define ___________________TMUX_R3_____________________   TM_CP_MODE  , TM_VSPLIT  , XXXXXXX    , XXXXXXX       , XXXXXXX
 #define ___________________TMUX_R4_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX
+
+#define ___________________NVIM_L1_____________________   NVIM_X_BUF    , NVIM_QPREV     , NVIM_QNEXT    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_L2_____________________   XXXXXXX    , NVIM_EPREV     , NVIM_ENEXT    , NVIM_B_MOVE_P       , NVIM_B_MOVE_N
+#define ___________________NVIM_L3_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_L4_____________________                              XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_R1_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_R2_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_R3_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_R4_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX
+
 
 
 #define ________________SHORTCUTS_L1___________________ XXXXXXX , MC_CLOS , MC_Z0R  , MC_PREV , XXXXXXX

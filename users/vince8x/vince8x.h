@@ -9,6 +9,7 @@
 #include "features/macros.h"
 #include "features/num_word.h"
 #include "features/tmux.h"
+#include "features/nvim.h"
 
 #ifdef MOUSE_ENABLE
 #    include "features/orbital_mouse.h"
