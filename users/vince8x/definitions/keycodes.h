@@ -108,6 +108,10 @@ enum custom_keycodes {
     NVIM_X_TAB,
     NVIM_HNEXT,
     NVIM_HPREV,
+    NVIM_PRN_NEXT,
+    NVIM_PRN_PREV,
+    NVIM_CBR_NEXT,
+    NVIM_CBR_PREV,
      // Start macros for accented letters
     ACCENT_MACRO_START,
     ACCENT_MACRO_END,
@@ -158,6 +162,8 @@ enum custom_keycodes {
 #define HOME_X LT(_FUN, KC_X)
 #define HOME_SL LT(_TMUX, KC_SLSH)
 #define HOME_DOT LT(_FUN, KC_DOT)
+#define HOME_D LT(_NVIM, KC_D)
+#define HOME_H LT(_NVIM, KC_H)
 
 // Home row mods for QWERTY layer.
 #define QHOME_A LT(_FUN, KC_A)

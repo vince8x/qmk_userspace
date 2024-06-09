@@ -7,12 +7,12 @@
 
 #define ___________________BASE_L1_____________________   KC_Q    , KC_W       , KC_F    , KC_P       , KC_B
 #define ___________________BASE_L2_____________________   HOME_A  , HOME_R     , HOME_S  , HOME_T     , HYP_KCG
-#define ___________________BASE_L3_____________________   HOME_Z  , HOME_X     , KC_C    , KC_D       , KC_V
+#define ___________________BASE_L3_____________________   HOME_Z  , HOME_X     , KC_C    , HOME_D     , KC_V
 #define ___________________BASE_L4_____________________                          NAV_SPC , MO(_SYM)   , MO_MOUSE
 #define ___________________BASE_R1_____________________   KC_J    , KC_L       , KC_U    , KC_Y       , KC_QUOT
 #define ___________________BASE_R2_____________________   HYP_KCM , HOME_N     , HOME_E  , HOME_I     , HOME_O
-#define ___________________BASE_R3_____________________   KC_K    , KC_H       , KC_COMM , HOME_DOT   , HOME_SL
-#define ___________________BASE_R4_____________________   MO_MOUSE, MO(_NUM)   , NAV_BSPC
+#define ___________________BASE_R3_____________________   KC_K    , HOME_H     , KC_COMM , HOME_DOT   , HOME_SL
+#define ___________________BASE_R4_____________________   QK_LEAD , MO(_NUM)   , NAV_BSPC
 
 #define ___________________QWERTY_L1___________________   KC_Q    , KC_W    , KC_E    , KC_R       , KC_T
 #define ___________________QWERTY_L2___________________   QHOME_A , QHOME_S , QHOME_D , QHOME_F    , HYP_KCG
@@ -61,7 +61,8 @@
 #define ___________________NAV_R1______________________   COPY        , KC_PGUP   , UNDO       , KC_HOME         , PAST
 #define ___________________NAV_R2______________________   KC_LEFT     , KC_DOWN   , KC_UP      , KC_RIGHT        , CW_TOGG
 #define ___________________NAV_R3______________________   KC_INS      , KC_PGDN   , REDO       , KC_END          , KC_SLSH
-#define ___________________NAV_R4______________________   KC_ENT      , KC_BSPC   , XXXXXXX
+#define ___________________NAV_R4______________________   KC_ENT      , QK_REP    , XXXXXXX
+
 
 #define ___________________MOU_L1______________________   _______     , OM_BTN2    , OM_U      , OM_BTNS         , OM_DBLS
 #define ___________________MOU_L2______________________   _______     , OM_L       , OM_D      , OM_R            , OM_HLDS
@@ -82,13 +83,13 @@
 #define ___________________TMUX_R3_____________________   TM_CP_MODE  , TM_VSPLIT  , XXXXXXX    , XXXXXXX       , XXXXXXX
 #define ___________________TMUX_R4_____________________   XXXXXXX     , XXXXXXX    , XXXXXXX
 
-#define ___________________NVIM_L1_____________________   NVIM_X_BUF    , NVIM_QPREV     , NVIM_QNEXT    , XXXXXXX       , XXXXXXX
-#define ___________________NVIM_L2_____________________   XXXXXXX    , NVIM_EPREV     , NVIM_ENEXT    , NVIM_B_MOVE_P       , NVIM_B_MOVE_N
-#define ___________________NVIM_L3_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
-#define ___________________NVIM_L4_____________________                              XXXXXXX    , XXXXXXX       , XXXXXXX
-#define ___________________NVIM_R1_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
-#define ___________________NVIM_R2_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
-#define ___________________NVIM_R3_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX    , XXXXXXX       , XXXXXXX
+#define ___________________NVIM_L1_____________________   NVIM_X_BUF    , NVIM_QPREV     , NVIM_QNEXT    , NVIM_TPREV          , NVIM_TNEXT
+#define ___________________NVIM_L2_____________________   NVIM_X_WIN    , NVIM_EPREV     , NVIM_ENEXT    , NVIM_B_MOVE_P       , NVIM_B_MOVE_N
+#define ___________________NVIM_L3_____________________   XXXXXXX       , XXXXXXX        , XXXXXXX       , XXXXXXX             , XXXXXXX
+#define ___________________NVIM_L4_____________________                                    XXXXXXX       , XXXXXXX             , XXXXXXX
+#define ___________________NVIM_R1_____________________   XXXXXXX    , XXXXXXX     , NVIM_PRN_PREV    , NVIM_PRN_NEXT       , XXXXXXX
+#define ___________________NVIM_R2_____________________   XXXXXXX    , XXXXXXX     , NVIM_PRN_PREV    , NVIM_PRN_NEXT       , XXXXXXX
+#define ___________________NVIM_R3_____________________   XXXXXXX    , XXXXXXX     , NVIM_CBR_PREV    , NVIM_CBR_NEXT       , XXXXXXX
 #define ___________________NVIM_R4_____________________   XXXXXXX    , XXXXXXX     , XXXXXXX
 
 

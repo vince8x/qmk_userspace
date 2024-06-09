@@ -13,7 +13,7 @@ const uint16_t l_base_perc_combo[] PROGMEM  = {HOME_S, KC_P, COMBO_END};
 
 // row 3
 const uint16_t l_base_labk_combo[] PROGMEM  = {HOME_X, KC_C, COMBO_END};
-const uint16_t l_base_rabk_combo[] PROGMEM  = {KC_C, KC_D, COMBO_END};
+const uint16_t l_base_rabk_combo[] PROGMEM  = {KC_C, HOME_D, COMBO_END};
 
 
 // row
@@ -31,19 +31,19 @@ const uint16_t r_base_rprn_combo[] PROGMEM  = {KC_U, HOME_I, COMBO_END};
 const uint16_t r_base_ent_combo[] PROGMEM  = {HOME_N, HOME_E, COMBO_END};
 const uint16_t r_base_esc_combo[] PROGMEM  = {HOME_E, HOME_I, COMBO_END};
 const uint16_t r_base_vim_start_line_combo[] PROGMEM  = {KC_L, HOME_E, COMBO_END};
-const uint16_t r_base_vim_end_line_combo[] PROGMEM  = {KC_H, HOME_E, COMBO_END};
+const uint16_t r_base_vim_end_line_combo[] PROGMEM  = {HOME_H, HOME_E, COMBO_END};
 const uint16_t r_base_colon_combo[] PROGMEM  = {HOME_N, HOME_I, COMBO_END};
 const uint16_t r_base_semicolon_combo[] PROGMEM  = {HOME_I, HOME_O, COMBO_END};
-const uint16_t r_base_pipe_combo[] PROGMEM  = {HOME_N, KC_H, COMBO_END};
+const uint16_t r_base_pipe_combo[] PROGMEM  = {HOME_N, HOME_H, COMBO_END};
 
 
 // row 3
 const uint16_t r_base_del_combo[] PROGMEM  = {HOME_I, HOME_DOT, COMBO_END};
 const uint16_t r_base_minus_combo[] PROGMEM = { HYP_KCM, HOME_N, COMBO_END};
-const uint16_t r_base_unders_combo[] PROGMEM = { KC_K, KC_H, COMBO_END};
+const uint16_t r_base_unders_combo[] PROGMEM = { KC_K, HOME_H, COMBO_END};
 const uint16_t r_base_equal_combo[] PROGMEM = { KC_J, KC_L, COMBO_END};
 const uint16_t r_base_plus_combo[] PROGMEM = { HYP_KCM, HOME_N, HOME_E, COMBO_END};
-const uint16_t r_base_lcbr_combo[] PROGMEM  = {KC_H, KC_COMM, COMBO_END};
+const uint16_t r_base_lcbr_combo[] PROGMEM  = {HOME_H, KC_COMM, COMBO_END};
 const uint16_t r_base_rcbr_combo[] PROGMEM  = {KC_COMM, HOME_DOT, COMBO_END};
 
 const uint16_t base_capsword_combo[] PROGMEM = {KC_F, KC_U, COMBO_END};
