@@ -112,6 +112,12 @@ enum custom_keycodes {
     NVIM_PRN_PREV,
     NVIM_CBR_NEXT,
     NVIM_CBR_PREV,
+    NVIM_SW_W,
+    NVIM_INCR_H,
+    NVIM_INCR_W,
+    NVIM_DECR_H,
+    NVIM_DECR_W,
+
      // Start macros for accented letters
     ACCENT_MACRO_START,
     ACCENT_MACRO_END,

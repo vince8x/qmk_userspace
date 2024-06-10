@@ -100,6 +100,26 @@ bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
                 tap_code(KC_LBRC);
                 tap_code16(KC_LCBR);
                 return false;
+            case NVIM_SW_W:
+                tap_code16(C(KC_W));
+                tap_code(KC_W);
+                return false;
+            case NVIM_INCR_H:
+                tap_code16(C(KC_W));
+                tap_code16(KC_PLUS);
+                return false;
+            case NVIM_DECR_H:
+                tap_code16(C(KC_W));
+                tap_code16(KC_MINS);
+                return false;
+            case NVIM_INCR_W:
+                tap_code16(C(KC_W));
+                tap_code16(KC_RABK);
+                return false;
+            case NVIM_DECR_W:
+                tap_code16(C(KC_W));
+                tap_code16(KC_LABK);
+                return false;
             default:
                 return true;
         }
