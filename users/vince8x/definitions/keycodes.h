@@ -165,9 +165,9 @@ enum custom_keycodes {
 #define HOME_I LALT_T(KC_I)
 #define HOME_O LGUI_T(KC_O)
 #define HOME_Z LT(_TMUX, KC_Z)
-#define HOME_X LT(_FUN, KC_X)
+#define HOME_X LT(_TMUX, KC_X)
 #define HOME_SL LT(_TMUX, KC_SLSH)
-#define HOME_DOT LT(_FUN, KC_DOT)
+#define HOME_DOT LT(_TMUX, KC_DOT)
 #define HOME_D LT(_NVIM, KC_D)
 #define HOME_H LT(_NVIM, KC_H)
 

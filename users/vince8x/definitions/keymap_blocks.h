@@ -24,22 +24,22 @@
 #define ___________________QWERTY_R4___________________   MO_FUN  , NAV_BSPC, NUM_REP
 
 
-#define ___________________NUM_L1______________________   KC_AT       , KC_LABK , KC_RABK   , KC_DLR       , KC_PERC
-#define ___________________NUM_L2______________________   KC_EXLM     , KC_PERC , KC_CIRC   , KC_AMPR      , KC_COLN
-#define ___________________NUM_L3______________________   KC_GRV      , KC_GRV  , KC_C      , LSFT(KC_MINS), KC_B
-#define ___________________NUM_L4______________________                           KC_SPC    , KC_SPC       , KC_SPC
-#define ___________________NUM_R1______________________   KC_EQL      , KC_7    , KC_8      , KC_9         , KC_BSLS
-#define ___________________NUM_R2______________________   KC_0        , KC_4    , KC_5      , KC_6         , KC_SCLN
-#define ___________________NUM_R3______________________   KC_MINS     , KC_1    , KC_2      , KC_3         , KC_SLSH
+#define ___________________NUM_L1______________________   KC_AT       , KC_LABK , KC_RABK    , KC_PLUS         , KC_HASH
+#define ___________________NUM_L2______________________   KC_EXLM     , KC_MINS , KC_PERC    , KC_EQL          , KC_CIRC
+#define ___________________NUM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_UNDS
+#define ___________________NUM_L4______________________                           KC_SPC     , KC_SPC          , KC_SPC
+#define ___________________NUM_R1______________________   KC_EQL      , KC_7    , KC_8       , KC_9            , KC_BSLS
+#define ___________________NUM_R2______________________   KC_0        , KC_4    , KC_5       , KC_6            , KC_SCLN
+#define ___________________NUM_R3______________________   KC_MINS     , KC_1    , KC_2       , KC_3            , KC_SLSH
 #define ___________________NUM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
 
 
-#define ___________________SYM_L1______________________   KC_AT       , KC_LABK , KC_RABK    , KC_PLUS         , KC_DQUO
-#define ___________________SYM_L2______________________   KC_EXLM     , KC_MINS , KC_PLUS    , KC_EQL          , KC_CIRC
-#define ___________________SYM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_QUOT
+#define ___________________SYM_L1______________________   KC_AT       , KC_LABK , KC_RABK    , KC_PLUS         , KC_HASH
+#define ___________________SYM_L2______________________   KC_EXLM     , KC_MINS , KC_PERC    , KC_EQL          , KC_CIRC
+#define ___________________SYM_L3______________________   KC_GRV      , KC_LABK , KC_RABK    , KC_MINS         , KC_UNDS
 #define ___________________SYM_L4______________________                           MO_FUN     , XXXXXXX         , KC_SPC
-#define ___________________SYM_R1______________________   KC_AMPR     , TD_SCLE , KC_LBRC    , KC_RBRC         , KC_BSLS
-#define ___________________SYM_R2______________________   KC_ASTR     , KC_COLN , KC_LPRN    , KC_RPRN         , KC_QUES
+#define ___________________SYM_R1______________________   KC_AMPR     , KC_ASTR , KC_LBRC    , KC_RBRC         , KC_BSLS
+#define ___________________SYM_R2______________________   TD_SCLE     , KC_COLN , KC_LPRN    , KC_RPRN         , KC_QUES
 #define ___________________SYM_R3______________________   KC_TILDE    , KC_DLR  , KC_LCBR    , KC_RCBR         , KC_SLSH
 #define ___________________SYM_R4______________________   KC_ENT      , KC_BSPC , TO(_BASE)
 
