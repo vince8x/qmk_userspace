@@ -12,8 +12,6 @@ const uint16_t l_base_alt_tab_combo[] PROGMEM  = {HOME_R, HOME_T, COMBO_END};
 const uint16_t l_base_perc_combo[] PROGMEM  = {HOME_S, KC_P, COMBO_END};
 
 // row 3
-const uint16_t l_base_labk_combo[] PROGMEM  = {HOME_X, KC_C, COMBO_END};
-const uint16_t l_base_rabk_combo[] PROGMEM  = {KC_C, HOME_D, COMBO_END};
 
 
 // row
@@ -74,8 +72,6 @@ combo_t key_combos[] = {
     COMBO(l_base_alt_tab_combo, A(KC_TAB)),
 
     // row 3
-    COMBO(l_base_labk_combo, KC_LABK),
-    COMBO(l_base_rabk_combo, KC_RABK),
 
     COMBO(r_base_lprn_combo, KC_LPRN),
     COMBO(r_base_rprn_combo, KC_RPRN),
