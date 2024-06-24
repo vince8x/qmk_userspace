@@ -64,8 +64,11 @@ enum {
 #define TM_COPY KC_Y
 #define TM_PASTE KC_RBRC
 #define TM_CP_MODE KC_LBRC
+#define TM_JUMP KC_J
 #define TM_MARK KC_M
+#define TM_JOIN_MARK C(KC_J)
 #define TM_UNMARK S(KC_M)
+#define TM_N_LAYOUT KC_SPC
 
 // nvim layer
 #define NVIM_LEADER KC_SPC

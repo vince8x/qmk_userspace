@@ -70,27 +70,28 @@
 #define ___________________MOU_L4______________________                              C(KC_C)   , C(KC_V)         , _______
 #define ___________________MOU_R1______________________   OM_DBLS     , OM_BTNS   , OM_U       , OM_BTN2         , _______
 #define ___________________MOU_R2______________________   OM_HLDS     , OM_L      , OM_D       , OM_R            , _______
+
 #define ___________________MOU_R3______________________   OM_RELS     , OM_W_D    , OM_W_U     , OM_BTN3         , _______
 #define ___________________MOU_R4______________________   _______     , C(KC_C)   , C(KC_V)
 
 
-#define ___________________TMUX_L1_____________________   TM_CLOSE      , TM_RENAME  , TM_ZOOM    , TM_PASTE      , TM_LS_S
-#define ___________________TMUX_L2_____________________   KC_A          , TM_WIN_P   , TM_WIN_N   , TM_NEW        , TM_LS_P
-#define ___________________TMUX_L3_____________________   XXXXXXX       , TM_MV_LEFT , TM_MV_RIGHT, TM_LS_P       , TM_SPLIT
-#define ___________________TMUX_L4_____________________                                TM_KEY     , XXXXXXX       , KC_SPC
-#define ___________________TMUX_R1_____________________   TM_CMD        , XXXXXXX    , XXXXXXX    , TM_COPY       , TM_P_TO_W
-#define ___________________TMUX_R2_____________________   TM_RESIZE_L   , TM_RESIZE_D, TM_RESIZE_U, TM_RESIZE_R   , TM_CYCLE
-#define ___________________TMUX_R3_____________________   TM_CP_MODE    , TM_VSPLIT  , XXXXXXX    , XXXXXXX       , XXXXXXX
-#define ___________________TMUX_R4_____________________   XXXXXXX       , XXXXXXX    , XXXXXXX
+#define ___________________TMUX_L1_____________________   TM_CLOSE      , TM_RENAME    , TM_ZOOM         , TM_PASTE      , TM_LS_S
+#define ___________________TMUX_L2_____________________   KC_A          , TM_WIN_P     , TM_WIN_N        , TM_NEW        , TM_CMD
+#define ___________________TMUX_L3_____________________   XXXXXXX       , TM_MV_LEFT   , TM_MV_RIGHT     , TM_LS_P       , TM_SPLIT
+#define ___________________TMUX_L4_____________________                                  TM_N_LAYOUT     , XXXXXXX       , KC_SPC
+#define ___________________TMUX_R1_____________________   TM_JUMP       , TM_MARK      , TM_UNMARK       , TM_COPY       , TM_P_TO_W
+#define ___________________TMUX_R2_____________________   TM_RESIZE_L   , TM_RESIZE_D  , TM_RESIZE_U     , TM_RESIZE_R   , TM_CYCLE
+#define ___________________TMUX_R3_____________________   TM_CP_MODE    , TM_VSPLIT    , XXXXXXX         , XXXXXXX       , XXXXXXX
+#define ___________________TMUX_R4_____________________   XXXXXXX       , TM_JOIN_MARK , XXXXXXX
 
-#define ___________________NVIM_L1_____________________   NVIM_X_BUF    , NVIM_QPREV  , NVIM_QNEXT       , NVIM_TPREV          , NVIM_TNEXT
-#define ___________________NVIM_L2_____________________   NVIM_X_WIN    , NVIM_EPREV  , NVIM_ENEXT       , NVIM_B_MOVE_P       , NVIM_B_MOVE_N
-#define ___________________NVIM_L3_____________________   NVIM_X_TAB    , NVIM_DPREV  , NVIM_DNEXT       , NVIM_TPREV          , NVIM_TNEXT
-#define ___________________NVIM_L4_____________________                                 XXXXXXX          , XXXXXXX             , XXXXXXX
-#define ___________________NVIM_R1_____________________   NVIM_INCR_H   , XXXXXXX     , NVIM_CBR_PREV    , NVIM_CBR_NEXT       , XXXXXXX
-#define ___________________NVIM_R2_____________________   NVIM_DECR_H   , XXXXXXX     , NVIM_PRN_PREV    , NVIM_PRN_NEXT       , NVIM_SW_W
-#define ___________________NVIM_R3_____________________   XXXXXXX       , XXXXXXX     , NVIM_DECR_W      , NVIM_INCR_W         , XXXXXXX
-#define ___________________NVIM_R4_____________________   XXXXXXX       , XXXXXXX     , XXXXXXX
+#define ___________________NVIM_L1_____________________   NVIM_X_BUF    , NVIM_QPREV   , NVIM_QNEXT      , NVIM_TPREV          , NVIM_TNEXT
+#define ___________________NVIM_L2_____________________   NVIM_X_WIN    , NVIM_EPREV   , NVIM_ENEXT      , NVIM_B_MOVE_P       , NVIM_B_MOVE_N
+#define ___________________NVIM_L3_____________________   NVIM_X_TAB    , NVIM_DPREV   , NVIM_DNEXT      , NVIM_HPREV          , NVIM_HNEXT
+#define ___________________NVIM_L4_____________________                                  XXXXXXX         , XXXXXXX             , XXXXXXX
+#define ___________________NVIM_R1_____________________   NVIM_INCR_H   , XXXXXXX      , NVIM_CBR_PREV   , NVIM_CBR_NEXT       , XXXXXXX
+#define ___________________NVIM_R2_____________________   NVIM_DECR_H   , XXXXXXX      , NVIM_PRN_PREV   , NVIM_PRN_NEXT       , NVIM_SW_W
+#define ___________________NVIM_R3_____________________   XXXXXXX       , XXXXXXX      , NVIM_DECR_W     , NVIM_INCR_W         , XXXXXXX
+#define ___________________NVIM_R4_____________________   XXXXXXX       , XXXXXXX      , XXXXXXX
 
 
 
