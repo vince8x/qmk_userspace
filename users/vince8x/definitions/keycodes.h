@@ -111,6 +111,8 @@ enum custom_keycodes {
     NVIM_TPREV,
     NVIM_X_WIN,
     NVIM_X_TAB,
+    NVIM_TAB_PREV,
+    NVIM_TAB_NEXT,
     NVIM_HNEXT,
     NVIM_HPREV,
     NVIM_PRN_NEXT,

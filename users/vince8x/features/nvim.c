@@ -3,7 +3,6 @@
 /* return false to finish processing of the key */
 /* return true  to fall through to the qmk processing of the key */
 bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
-
     if (IS_LAYER_ON(_NVIM) && record->event.pressed) {
         switch (keycode) {
             case NVIM_X_BUF:
@@ -19,6 +18,16 @@ bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
                 tap_code(NVIM_LEADER);
                 tap_code(KC_TAB);
                 tap_code(KC_D);
+                return false;
+            case NVIM_TAB_PREV:
+                tap_code(NVIM_LEADER);
+                tap_code(KC_TAB);
+                tap_code(KC_LBRC);
+                return false;
+            case NVIM_TAB_NEXT:
+                tap_code(NVIM_LEADER);
+                tap_code(KC_TAB);
+                tap_code(KC_RBRC);
                 return false;
             case NVIM_BNEXT:
                 tap_code(KC_RBRC);
