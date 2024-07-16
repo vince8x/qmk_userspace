@@ -81,7 +81,7 @@
 #define ___________________TMUX_L4_____________________                                  TM_N_LAYOUT     , XXXXXXX       , KC_SPC
 #define ___________________TMUX_R1_____________________   TM_JUMP       , TM_MARK      , TM_UNMARK       , TM_COPY       , TM_P_TO_W
 #define ___________________TMUX_R2_____________________   TM_RESIZE_L   , TM_RESIZE_D  , TM_RESIZE_U     , TM_RESIZE_R   , TM_CYCLE
-#define ___________________TMUX_R3_____________________   TM_CP_MODE    , TM_VSPLIT    , XXXXXXX         , XXXXXXX       , XXXXXXX
+#define ___________________TMUX_R3_____________________   TM_CP_MODE    , TM_VSPLIT    , XXXXXXX         , TM_FZF_NOVA   , XXXXXXX
 #define ___________________TMUX_R4_____________________   XXXXXXX       , TM_JOIN_MARK , XXXXXXX
 
 #define ___________________NVIM_L1_____________________   NVIM_X_WIN    , NVIM_QPREV   , NVIM_QNEXT      , NVIM_TPREV          , NVIM_TNEXT

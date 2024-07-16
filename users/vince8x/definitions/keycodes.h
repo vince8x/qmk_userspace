@@ -69,6 +69,7 @@ enum {
 #define TM_JOIN_MARK C(KC_J)
 #define TM_UNMARK S(KC_M)
 #define TM_N_LAYOUT KC_SPC
+#define TM_FZF_NOVA KC_TAB
 
 // nvim layer
 #define NVIM_LEADER KC_SPC

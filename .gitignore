@@ -10,3 +10,6 @@
 *.bin
 *.uf2
 .vscode
+
+# Compiled files
+compile_commands.json
