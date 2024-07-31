@@ -250,6 +250,7 @@ enum custom_keycodes {
 #define MONITOR_N LCA(KC_DOT)
 #define MONITOR_P LCA(KC_COMM)
 #define TOGG_MON A(KC_A)
+#define TOGG_BARRIER RCS(KC_A)
 #define DESK_N A(KC_TAB)
 #define DESK_P LSA(KC_TAB)
 #define TERM_N C(KC_PGDN)

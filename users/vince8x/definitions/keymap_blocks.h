@@ -55,8 +55,8 @@
 
 
 #define ___________________NAV_L1______________________   TAB_CLOSE   , OBS_P     , OBS_N      , MONITOR_P       , MONITOR_N
-#define ___________________NAV_L2______________________   TOGG_MON    , TAB_PREV  , TAB_NEXT   , VSCODE_P        , VSCODE_N
-#define ___________________NAV_L3______________________   WARPD_C     , WARPD_X   , WARPD_G    , DESK_P          , DESK_N
+#define ___________________NAV_L2______________________   TOGG_MON    , S(KC_TAB)  , KC_TAB     , VSCODE_P        , VSCODE_N
+#define ___________________NAV_L3______________________   TOGG_BARRIER, TAB_PREV  , TAB_NEXT   , DESK_P          , DESK_N
 #define ___________________NAV_L4______________________                             XXXXXXX    , XXXXXXX         , KC_SPC
 #define ___________________NAV_R1______________________   COPY        , KC_PGUP   , UNDO       , KC_HOME         , PAST
 #define ___________________NAV_R2______________________   KC_LEFT     , KC_DOWN   , KC_UP      , KC_RIGHT        , CW_TOGG
