@@ -70,6 +70,7 @@ enum {
 #define TM_UNMARK S(KC_M)
 #define TM_N_LAYOUT KC_SPC
 #define TM_FZF_NOVA KC_TAB
+#define TM_SW_W KC_QUOT
 
 // nvim layer
 #define NVIM_LEADER KC_SPC
