@@ -51,7 +51,7 @@ enum {
 #define TM_CLOSE KC_X
 #define TM_ZOOM KC_Z
 #define TM_P_TO_W KC_EXLM
-#define TM_MV_LEFT KC_LCBR
+#define TM_MV KC_LT
 #define TM_MV_RIGHT KC_RCBR
 #define TM_LEFT KC_LEFT
 #define TM_RIGHT KC_RIGHT
@@ -280,6 +280,8 @@ enum custom_keycodes {
 #define HYP_KCG HYPR_T(KC_G)
 #define HYP_KCM HYPR_T(KC_M)
 #define HYP_KCH HYPR_T(KC_H)
+#define MEH_KCL MEH_T(KC_L)
+#define MEH_KCP MEH_T(KC_P)
 
 
 // function
