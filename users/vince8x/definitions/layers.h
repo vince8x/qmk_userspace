@@ -1,8 +1,13 @@
 #pragma once
 
 typedef enum {
+#ifdef QWERTY
+    _QWERTY,
+    _BASE,
+#else
     _BASE,
     _QWERTY,
+#endif
     _SYM,
     _NUM,
     _FUN,

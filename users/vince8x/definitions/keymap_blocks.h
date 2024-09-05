@@ -14,14 +14,14 @@
 #define ___________________BASE_R3_____________________   KC_K    , HOME_H     , KC_COMM , HOME_DOT   , HOME_SL
 #define ___________________BASE_R4_____________________   QK_LEAD , MO(_NUM)   , NAV_BSPC
 
-#define ___________________QWERTY_L1___________________   KC_Q    , KC_W    , KC_E    , KC_R       , KC_T
-#define ___________________QWERTY_L2___________________   QHOME_A , QHOME_S , QHOME_D , QHOME_F    , HYP_KCG
-#define ___________________QWERTY_L3___________________   QHOME_Z , KC_X    , KC_C    , KC_V       , KC_B
-#define ___________________QWERTY_L4___________________                       NUM_REP , NAV_SPC    , MO_FUN
-#define ___________________QWERTY_R1___________________   KC_Y    , KC_U    , KC_I    , KC_O       , KC_P
-#define ___________________QWERTY_R2___________________   HYP_KCH , QHOME_J , QHOME_K , QHOME_L    , QHOME_SC
-#define ___________________QWERTY_R3___________________   KC_N    , KC_M    , KC_COMM , QHOME_DOT  , QHOME_SL
-#define ___________________QWERTY_R4___________________   MO_FUN  , NAV_BSPC, NUM_REP
+#define ___________________QWERTY_L1___________________   KC_Q    , KC_W       , KC_E    , KC_R       , KC_T
+#define ___________________QWERTY_L2___________________   QHOME_A , QHOME_S    , QHOME_D , QHOME_F    , HYP_KCG
+#define ___________________QWERTY_L3___________________   QHOME_Z , QHOME_X    , KC_C    , QHOME_V    , KC_B
+#define ___________________QWERTY_L4___________________                          NAV_SPC , MO(_SYM)   , MO_MOUSE
+#define ___________________QWERTY_R1___________________   KC_Y    , KC_U       , KC_I    , KC_O       , KC_P
+#define ___________________QWERTY_R2___________________   HYP_KCH , QHOME_J    , QHOME_K , QHOME_L    , QHOME_SC
+#define ___________________QWERTY_R3___________________   KC_N    , QHOME_M    , KC_COMM , QHOME_DOT  , QHOME_SL
+#define ___________________QWERTY_R4___________________   QK_LEAD , MO(_NUM)   , NAV_BSPC
 
 
 #define ___________________NUM_L1______________________   KC_AT       , KC_LABK , KC_RABK    , KC_PLUS         , KC_HASH
