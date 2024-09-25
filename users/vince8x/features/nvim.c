@@ -129,6 +129,12 @@ bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
                 tap_code16(C(KC_W));
                 tap_code16(KC_LABK);
                 return false;
+            case NVIM_JUMP_P:
+                tap_code16(C(KC_O));
+                return false;
+            case NVIM_JUMP_N:
+                tap_code16(C(KC_I));
+                return false;
             default:
                 return true;
         }

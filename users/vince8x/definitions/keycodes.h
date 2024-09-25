@@ -127,6 +127,8 @@ enum custom_keycodes {
     NVIM_INCR_W,
     NVIM_DECR_H,
     NVIM_DECR_W,
+    NVIM_JUMP_P,
+    NVIM_JUMP_N,
 
      // Start macros for accented letters
     ACCENT_MACRO_START,
@@ -304,6 +306,7 @@ enum custom_keycodes {
 
 #define NAV_BSPC LT(_NAV, KC_BSPC)
 #define NUM_REP LT(_NUM, REPEAT)
+#define NUM_ESC LT(_NUM, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPC)
 #define SYM_E LT(_SYM, KC_E)
 #define SYM_REP LT(_SYM, QK_REP)

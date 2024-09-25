@@ -55,7 +55,7 @@
 
 
 #define ___________________NAV_L1______________________   TAB_CLOSE   , OBS_P     , OBS_N      , MONITOR_P       , MONITOR_N
-#define ___________________NAV_L2______________________   TOGG_MON    , S(KC_TAB)  , KC_TAB     , VSCODE_P        , VSCODE_N
+#define ___________________NAV_L2______________________   TOGG_MON    , S(KC_TAB) , KC_TAB     , VSCODE_P        , VSCODE_N
 #define ___________________NAV_L3______________________   TOGG_BARRIER, TAB_PREV  , TAB_NEXT   , DESK_P          , DESK_N
 #define ___________________NAV_L4______________________                             XXXXXXX    , XXXXXXX         , KC_SPC
 #define ___________________NAV_R1______________________   COPY        , KC_PGUP   , UNDO       , KC_HOME         , PAST
@@ -89,7 +89,7 @@
 #define ___________________NVIM_L3_____________________   NVIM_X_TAB    , NVIM_TAB_PREV, NVIM_TAB_NEXT   , NVIM_HPREV          , NVIM_HNEXT
 #define ___________________NVIM_L4_____________________                                  XXXXXXX         , XXXXXXX             , XXXXXXX
 #define ___________________NVIM_R1_____________________   NVIM_INCR_H   , XXXXXXX      , NVIM_CBR_PREV   , NVIM_CBR_NEXT       , XXXXXXX
-#define ___________________NVIM_R2_____________________   NVIM_DECR_H   , XXXXXXX      , NVIM_PRN_PREV   , NVIM_PRN_NEXT       , NVIM_SW_W
+#define ___________________NVIM_R2_____________________   NVIM_JUMP_P   , NVIM_JUMP_N  , NVIM_PRN_PREV   , NVIM_PRN_NEXT       , NVIM_SW_W
 #define ___________________NVIM_R3_____________________   XXXXXXX       , XXXXXXX      , NVIM_DECR_W     , NVIM_INCR_W         , XXXXXXX
 #define ___________________NVIM_R4_____________________   XXXXXXX       , XXXXXXX      , XXXXXXX
 
