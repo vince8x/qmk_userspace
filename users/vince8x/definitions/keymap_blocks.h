@@ -75,9 +75,9 @@
 #define ___________________MOU_R4______________________   _______     , C(KC_C)   , C(KC_V)
 
 
-#define ___________________TMUX_L1_____________________   TM_CLOSE      , TM_RENAME    , TM_ZOOM         , TM_PASTE      , TM_LS_S
+#define ___________________TMUX_L1_____________________   TM_CLOSE      , TM_RENAME    , TM_FINGERS      , TM_PASTE      , TM_LS_S
 #define ___________________TMUX_L2_____________________   KC_A          , TM_WIN_P     , TM_WIN_N        , TM_NEW        , TM_CMD
-#define ___________________TMUX_L3_____________________   XXXXXXX       , TM_MV        , TM_MV_RIGHT     , TM_LS_P       , TM_SPLIT
+#define ___________________TMUX_L3_____________________   TM_ZOOM       , TM_MV        , TM_MV_RIGHT     , TM_LS_P       , TM_SPLIT
 #define ___________________TMUX_L4_____________________                                  TM_N_LAYOUT     , XXXXXXX       , KC_SPC
 #define ___________________TMUX_R1_____________________   TM_JUMP       , TM_MARK      , TM_UNMARK       , TM_COPY       , TM_P_TO_W
 #define ___________________TMUX_R2_____________________   TM_RESIZE_L   , TM_RESIZE_D  , TM_RESIZE_U     , TM_RESIZE_R   , TM_CYCLE

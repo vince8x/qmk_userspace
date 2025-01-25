@@ -105,15 +105,48 @@ void td_macro(tap_dance_state_t *state, void *user_data) {
     }
 }
 
+void td_leader_key(tap_dance_state_t *state, void *user_data) {
+    tap_state.state = dance_state(state);
+    switch (tap_state.state) {
+        case TD_DOUBLE_TAP:
+            if (!leader.isLeading) {
+                leader_start();
+            }
+            break;
+        default:
+            break;
+    }
+}
+
+void td_dot(tap_dance_state_t *state, void *user_data) {
+    tap_state.state = dance_state(state);
+    switch (tap_state.state) {
+        case TD_SINGLE_TAP:
+            tap_code(KC_DOT);
+            break;
+        case TD_DOUBLE_SINGLE_TAP:
+        case TD_DOUBLE_TAP:
+            tap_code(KC_DOT);
+            tap_code(KC_DOT);
+            break;
+        case TD_TRIPLE_TAP:
+            tap_code(KC_DOT);
+            tap_code(KC_DOT);
+            tap_code(KC_DOT);
+            break;
+        default:
+            break;
+    }
+}
 
 // clang-format off
 
 // Tap dance declarations
 
 tap_dance_action_t tap_dance_actions[] = {
-    [ENT_END] = ACTION_TAP_DANCE_FN(td_enter_end),
     [SCL_END] = ACTION_TAP_DANCE_FN(td_semicolon),
     [TMUX_PREFIX] = ACTION_TAP_DANCE_FN(td_tmux_prefix),
+    [DOT_DOT] = ACTION_TAP_DANCE_FN(td_dot),
 #ifdef DYNAMIC_MACRO_ENABLE
     [REC_MAC] = ACTION_TAP_DANCE_FN(td_macro),
 #endif

@@ -8,9 +8,10 @@
 // tap dance codes
 enum {
     TD_CODE_START,
-    ENT_END,
     SCL_END,
     TMUX_PREFIX,
+    LEADER_TAP,
+    DOT_DOT,
 
 #ifdef DYNAMIC_MACRO_ENABLE
     REC_MAC,
@@ -20,9 +21,9 @@ enum {
 
 // tap dance keycodes
 
-#define TD_EENT TD(ENT_END)
 #define TD_SCLE TD(SCL_END)
 #define TD_TMUX TD(TMUX_PREFIX)
+#define TD_LEAD TD(DOT_DOT)
 #ifdef DYNAMIC_MACRO_ENABLE
 #define TD_MACR TD(REC_MAC)
 #else
@@ -72,6 +73,7 @@ enum {
 #define TM_FZF_NOVA KC_TAB
 #define TM_FZF_URL KC_U
 #define TM_SW_W KC_QUOT
+#define TM_FINGERS KC_F
 
 // nvim layer
 #define NVIM_LEADER KC_SPC
@@ -308,7 +310,7 @@ enum custom_keycodes {
 #define NUM_REP LT(_NUM, REPEAT)
 #define NUM_ESC LT(_NUM, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPC)
-#define SYM_E LT(_SYM, KC_E)
+#define SYM_F16 LT(_SYM, KC_F16)
 #define SYM_REP LT(_SYM, QK_REP)
 
 
