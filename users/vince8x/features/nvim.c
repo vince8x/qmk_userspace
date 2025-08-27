@@ -135,6 +135,10 @@ bool process_nvim(uint16_t keycode, const keyrecord_t *record) {
             case NVIM_JUMP_N:
                 tap_code16(C(KC_I));
                 return false;
+            case NVIM_ESCAPE_TERM:
+                tap_code16(C(KC_BSLS));
+                tap_code16(C(KC_N));
+                return false;
             default:
                 return true;
         }

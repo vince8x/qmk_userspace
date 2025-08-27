@@ -12,6 +12,7 @@ enum {
     TMUX_PREFIX,
     LEADER_TAP,
     DOT_DOT,
+    SF1_SYM,
 
 #ifdef DYNAMIC_MACRO_ENABLE
     REC_MAC,
@@ -24,6 +25,7 @@ enum {
 #define TD_SCLE TD(SCL_END)
 #define TD_TMUX TD(TMUX_PREFIX)
 #define TD_LEAD TD(DOT_DOT)
+#define TD_SF1 TD(SF1_SYM)
 #ifdef DYNAMIC_MACRO_ENABLE
 #define TD_MACR TD(REC_MAC)
 #else
@@ -131,6 +133,7 @@ enum custom_keycodes {
     NVIM_DECR_W,
     NVIM_JUMP_P,
     NVIM_JUMP_N,
+    NVIM_ESCAPE_TERM,
 
      // Start macros for accented letters
     ACCENT_MACRO_START,
@@ -310,7 +313,9 @@ enum custom_keycodes {
 #define NUM_REP LT(_NUM, REPEAT)
 #define NUM_ESC LT(_NUM, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPC)
+#define SYM_F2 LT(_SYM, KC_F2)
 #define SYM_F16 LT(_SYM, KC_F16)
+#define NUM_F17 LT(_NUM, KC_F17)
 #define SYM_REP LT(_SYM, QK_REP)
 
 

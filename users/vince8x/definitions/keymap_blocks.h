@@ -8,7 +8,7 @@
 #define ___________________BASE_L1_____________________   KC_Q    , KC_W       , KC_F    , KC_P       , KC_B
 #define ___________________BASE_L2_____________________   HOME_A  , HOME_R     , HOME_S  , HOME_T     , HYP_KCG
 #define ___________________BASE_L3_____________________   HOME_Z  , HOME_X     , KC_C    , HOME_D     , KC_V
-#define ___________________BASE_L4_____________________                          NAV_SPC , MO(_SYM)   , MO_MOUSE
+#define ___________________BASE_L4_____________________                          NAV_SPC , SYM_F2    , MO_MOUSE
 #define ___________________BASE_R1_____________________   KC_J    , KC_L       , KC_U    , KC_Y       , KC_QUOT
 #define ___________________BASE_R2_____________________   HYP_KCM , HOME_N     , HOME_E  , HOME_I     , HOME_O
 #define ___________________BASE_R3_____________________   KC_K    , HOME_H     , KC_COMM , HOME_DOT   , HOME_SL
@@ -88,7 +88,7 @@
 #define ___________________NVIM_L2_____________________   NVIM_X_BUF    , NVIM_BPREV   , NVIM_BNEXT      , NVIM_B_MOVE_P       , NVIM_B_MOVE_N
 #define ___________________NVIM_L3_____________________   NVIM_X_TAB    , NVIM_TAB_PREV, NVIM_TAB_NEXT   , NVIM_HPREV          , NVIM_HNEXT
 #define ___________________NVIM_L4_____________________                                  XXXXXXX         , XXXXXXX             , XXXXXXX
-#define ___________________NVIM_R1_____________________   NVIM_INCR_H   , XXXXXXX      , NVIM_CBR_PREV   , NVIM_CBR_NEXT       , XXXXXXX
+#define ___________________NVIM_R1_____________________   NVIM_INCR_H   , XXXXXXX      , NVIM_CBR_PREV   , NVIM_CBR_NEXT       , NVIM_ESCAPE_TERM
 #define ___________________NVIM_R2_____________________   NVIM_JUMP_P   , NVIM_JUMP_N  , NVIM_PRN_PREV   , NVIM_PRN_NEXT       , NVIM_SW_W
 #define ___________________NVIM_R3_____________________   XXXXXXX       , XXXXXXX      , NVIM_DECR_W     , NVIM_INCR_W         , XXXXXXX
 #define ___________________NVIM_R4_____________________   XXXXXXX       , XXXXXXX      , XXXXXXX

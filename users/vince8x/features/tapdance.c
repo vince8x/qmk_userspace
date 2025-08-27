@@ -118,6 +118,30 @@ void td_leader_key(tap_dance_state_t *state, void *user_data) {
     }
 }
 
+void td_sf1_sym(tap_dance_state_t *state, void *user_data) {
+    tap_state.state = dance_state(state);
+    switch (tap_state.state) {
+        case TD_SINGLE_TAP:
+            register_code(KC_LSFT);
+            tap_code(KC_F1);
+            unregister_code(KC_LSFT);
+            break;
+        case TD_SINGLE_HOLD:
+            layer_on(_SYM);
+            break;
+        default:
+            break;
+    }
+}
+
+void td_sym_f1_shift_finished(tap_dance_state_t *state, void *user_data) {
+    layer_off(_SYM);
+}
+
+void td_sf1_sym_reset(tap_dance_state_t *state, void *user_data) {
+    layer_off(_SYM);
+}
+
 void td_dot(tap_dance_state_t *state, void *user_data) {
     tap_state.state = dance_state(state);
     switch (tap_state.state) {
@@ -144,6 +168,7 @@ void td_dot(tap_dance_state_t *state, void *user_data) {
 // Tap dance declarations
 
 tap_dance_action_t tap_dance_actions[] = {
+    [SF1_SYM] = ACTION_TAP_DANCE_FN_ADVANCED(td_sf1_sym, td_sym_f1_shift_finished, td_sf1_sym_reset),
     [SCL_END] = ACTION_TAP_DANCE_FN(td_semicolon),
     [TMUX_PREFIX] = ACTION_TAP_DANCE_FN(td_tmux_prefix),
     [DOT_DOT] = ACTION_TAP_DANCE_FN(td_dot),
